@@ -1,12 +1,13 @@
 import React from "react";
 
 import Layout from "./components/Layout/Layout";
+import LayerBuilder from "./containers/LayerBuilder/LayerBuilder";
 
 function App() {
   return (
     <div>
       <Layout>
-        <p>Test</p>
+        <LayerBuilder></LayerBuilder>
       </Layout>
     </div>
   );
