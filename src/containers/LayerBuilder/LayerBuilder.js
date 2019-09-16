@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
 import Aux from "../../hoc/Auxiliary";
+
 class LayerBuilder extends Component {
   render() {
     return (
