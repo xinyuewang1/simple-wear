@@ -15,7 +15,7 @@
    version="1.1"
    id="svg8"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
-   sodipodi:docname="trousers.svg">
+   sodipodi:docname="looseTrousers.svg">
   <defs
      id="defs2" />
   <sodipodi:namedview
@@ -26,7 +26,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1"
-     inkscape:cx="391.79695"
+     inkscape:cx="309.29695"
      inkscape:cy="710.4172"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
@@ -44,7 +44,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -54,18 +54,19 @@
      id="layer1">
     <path
        style="fill:none;stroke:#001a33;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 120.65,43.264584 h 34.66041 l 7.40834,132.291666 h -25.4 L 120.91458,86.391667"
+       d="m 120.65,43.264584 h 37.30624 l 4.76251,132.291666 -31.22083,0.26458 -10.58334,-89.429163"
        id="path6829"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccc" />
     <path
        style="fill:none;stroke:#001a33;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 120.91458,51.202084 34.39583,-2.38125"
+       d="m 120.91458,51.202084 36.24791,-1.852083"
        id="path6831"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
     <path
        style="fill:none;stroke:#001a33;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 133.87916,50.408334 c 5.68514,5.593941 5.01393,12.953537 22.225,15.345833"
+       d="m 133.87916,50.408334 c 5.68514,5.593941 7.1306,14.01187 24.34167,16.404166"
        id="path6833"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
