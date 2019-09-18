@@ -14,7 +14,7 @@
    viewBox="0 0 210 297"
    version="1.1"
    id="svg8"
-   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   inkscape:version="0.92.2 5c3e80d, 2017-08-06"
    sodipodi:docname="vest.svg">
   <defs
      id="defs2" />
@@ -26,15 +26,15 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1"
-     inkscape:cx="394.16774"
+     inkscape:cx="215.16774"
      inkscape:cy="612.12225"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1366"
-     inkscape:window-height="705"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
+     inkscape:window-width="1440"
+     inkscape:window-height="855"
+     inkscape:window-x="219"
+     inkscape:window-y="1081"
      inkscape:window-maximized="1" />
   <metadata
      id="metadata5">
@@ -44,7 +44,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -80,13 +80,7 @@
        sodipodi:nodetypes="ccc"
        inkscape:connector-curvature="0"
        id="path7493"
-       d="m 84.53095,65.758403 19.34374,62.647777 v 0"
+       d="m 100.14137,120.52715 3.73332,7.87903 v 0"
        style="fill:none;fill-opacity:1;stroke:#001a33;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-    <path
-       sodipodi:nodetypes="ccccccc"
-       inkscape:connector-curvature="0"
-       id="path7505"
-       d="M 107.29157,201.2106 H 57.15185 v -42.65622 l 0.0843,-44.76643 c 6.89735,-12.87318 5.72686,-26.220929 0.66401,-39.797645 l 26.63079,-8.231902 c 9.609959,2.271356 20.8874,3.329994 38.19922,0"
-       style="fill:none;stroke:#001a33;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
 </svg>
