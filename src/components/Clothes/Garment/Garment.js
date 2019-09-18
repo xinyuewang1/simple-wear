@@ -1,6 +1,6 @@
 import React from "react";
 
-// props: clo, gender
+// props: clo
 const Garment = props => {
   let ensemble = null;
   const clo = props.clo;
@@ -9,63 +9,45 @@ const Garment = props => {
     ensemble = ["panties", "tubeTop", "shortShorts", "sandals"];
   } else if (0.3 < clo <= 0.4) {
     // 0.36 102
-    ensemble = [
-      "panties",
-      "ShortSleeveShirt",
-      "walkingShorts", //0.08
-      "socks",
-      "streetShoes"
-    ];
+    ensemble = ["panties", "ShortSleeveShirt", "shorts", "socks", "shoes"];
   } else if (0.4 < clo <= 0.5) {
     // 0.49 107
     ensemble = [
-      // panties 0.03, brief 0.04
       "panties",
-      "ShortSleeveShirt", // polo
-      "fittedTrousers",
-      "socks",
-      "streetShoes"
-    ];
-  } else if (0.5 < clo <= 0.6) {
-    // 0.6 108
-    ensemble = [
-      "panties",
-      "shirt", // 0.33
-      "fittedTrousers",
-      "socks",
-      "streetShoes"
-    ];
-  } else if (0.6 < clo <= 0.7) {
-    // 203
-    ensemble = [
-      "panties",
-      "shirt", // 0.33
-      "looseTrousers",
+      "ShortSleeveShirt",
+      "thinTrousers",
       "socks",
       "shoes"
     ];
+  } else if (0.5 < clo <= 0.6) {
+    // 0.6 108
+    ensemble = ["panties", "shirt", "thinTrousers", "socks", "shoes"];
+  } else if (0.6 < clo <= 0.7) {
+    // 203
+    ensemble = ["panties", "thickShirt", "trousers", "socks", "shoes"];
   } else if (0.7 < clo <= 0.8) {
     // 121 0.77
-    ensemble = ["panties", "sweater", "looseTrousers", "socks", "runners"];
+    ensemble = ["panties", "sweater", "ThickTrousers", "socks", "shoes"];
   } else if (0.8 < clo <= 0.9) {
     // 112
     ensemble = [
       "panties",
       "tShirt",
-      "shirt",
-      "looseTrousers",
+      "thickShirt",
+      "ThickTrousers",
       "socks",
-      "streetShoes"
+      "shoes"
     ];
   } else if (0.9 < clo <= 1) {
+    // 114
     ensemble = [
       "panties",
       "tShirt",
       "shirt",
-      "looseTrousers",
+      "ThickTrousers",
       "sweater",
       "socks",
-      "streetShoes"
+      "shoes"
     ];
   } else if (1 < clo <= 1.1) {
     // 118
@@ -73,10 +55,10 @@ const Garment = props => {
       "panties",
       "tShirt",
       "shirt",
-      "thickLooseTrousers",
-      "suiteJacket",
+      "ThickTrousers",
+      "woolJacket",
       "socks",
-      "streetShoes"
+      "shoes"
     ];
   } else if (1.1 < clo <= 1.2) {
     // 117 1.16
@@ -84,33 +66,48 @@ const Garment = props => {
       "panties",
       "tShirt",
       "shirt",
-      "thickLooseTrousers",
+      "ThickTrousers",
       "vest",
-      "suitJacket",
+      "woolJacket",
       "socks",
-      "streetShoes"
+      "shoes"
     ];
   } else if (1.2 < clo <= 1.3) {
     // 129 1.3
     ensemble = [
-      "underwear with long sleeves",
-      "underwear with long legs",
+      "panties",
+      "thermalUnderpants",
+      "tShirt",
       "shirt",
-      "trousers",
-      "v-neck sweater",
-      "jacket",
+      "ThickTrousers",
+      "sweater",
+      "woolJacket",
       "socks",
       "shoes"
     ];
-  } else if (1.3 < clo <= 1.5) {
+  } else if (1.3 < clo <= 1.4) {
+    // 450 1.37
     ensemble = [
-      "underwear with short sleeves",
-      "underwear with long legs",
+      "panties",
+      "thermalUnderpants",
+      "undershirt",
       "shirt",
-      "trousers",
+      "thinTrousers",
+      "cardigan",
+      "woolJacket",
+      "thickSocks",
+      "shoes"
+    ];
+  } else if (1.4 < clo <= 1.5) {
+    // 445 1.49
+    ensemble = [
+      "panties",
+      "tShirt",
+      "thinShirt",
+      "thinTrousers",
       "vest",
-      "jacket",
       "coat",
+      "woolJacket",
       "socks",
       "shoes"
     ];

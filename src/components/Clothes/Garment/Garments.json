@@ -1,29 +1,55 @@
 {
   "panties": { "cat": "underwear", "clo": 0.03 },
+  "thermalUnderpants": {
+    "cat": "underwear",
+    "clo": 0.15,
+    "No": 27,
+    "fabric": "50% cotton"
+  },
+  "undershirt": { "cat": "underwear", "clo": 0.16, "No": 37 },
   "tubeTop": { "cat": "top", "clo": 0.06 },
   "tShirt": { "cat": "top", "clo": 0.08, "No": 30 },
-  "ShortSleeveShirt": { "cat": "top", "clo": 0.17 },
-  "shirt": { "cat": "top", "clo": 0.33 },
-  "sweater": { "cat": "top", "clo": 0.34 },
-  "suitJacket": { "cat": "top", "clo": 0.44, "No": 157 },
+  "ShortSleeveShirt": { "cat": "top", "clo": 0.17, "No": 79, "desc": "polo" },
+  "vest": { "cat": "top", "clo": 0.17, "No": 162 },
+  "cardigan": { "cat": "top", "clo": 0.29, "No": 140 },
+  "thinShirt": { "cat": "top", "clo": 0.15 },
+  "shirt": { "cat": "top", "clo": 0.25, "No": 75 },
+  "thickShirt": {
+    "cat": "top",
+    "clo": 0.33,
+    "No": 54,
+    "fabric": "100% cotton"
+  },
+  "sweater": { "cat": "top", "clo": 0.34, "No": 290 },
+  "woolJacket": {
+    "cat": "top",
+    "clo": 0.44,
+    "No": 157,
+    "fabric": "50% wool"
+  },
+  "coat": { "cat": "top", "clo": 0.65, "No": 184, "desc": "below knee length" },
   "shortShorts": { "cat": "trousers", "clo": 0.08, "desc": "length to thigh" },
-  "walkingShorts": {
+  "shorts": {
     "cat": "trousers",
     "clo": 0.11,
     "No": 84,
-    "desc": "above kneel"
+    "desc": "above knee"
   },
-  "fittedTrousers": { "cat": "trousers", "clo": 0.18 },
-  "looseTrousers": { "cat": "trousers", "clo": 0.22 },
-  "ThickLooseTrousers": {
+  "thinTrousers": { "cat": "trousers", "clo": 0.18 },
+  "trousers": {
+    "cat": "trousers",
+    "clo": 0.22,
+    "fabric": "100% cotton",
+    "No": 86
+  },
+  "ThickTrousers": {
     "cat": "trousers",
     "clo": 0.28,
     "No": 103,
-    "fabric": "wool"
+    "fabric": "50% wool"
   },
-  "socks": { "cat": "socks", "clo": 0.03 },
+  "socks": { "cat": "socks", "clo": 0.03, "No": 265 },
+  "thickSocks": { "cat": "socks", "clo": 0.05, "No": 256 },
   "sandals": { "cat": "shoes", "clo": 0.02 },
-  "runners": { "cat": "shoes", "clo": 0.02 },
-  "streetShoes": { "cat": "shoes", "clo": 0.03, "No": 260 },
-  "shoes": { "cat": "shoes", "clo": 0.05 }
+  "shoes": { "cat": "shoes", "clo": 0.03, "No": 260 }
 }
