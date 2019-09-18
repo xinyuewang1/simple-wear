@@ -9,12 +9,12 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="210mm"
-   height="297mm"
-   viewBox="0 0 210 297"
+   width="27.273323mm"
+   height="61.987614mm"
+   viewBox="0 0 27.273323 61.987614"
    version="1.1"
    id="svg834"
-   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   inkscape:version="0.92.2 5c3e80d, 2017-08-06"
    sodipodi:docname="tubeTop.svg">
   <defs
      id="defs828" />
@@ -26,15 +26,15 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1"
-     inkscape:cx="362.07341"
-     inkscape:cy="744.32791"
+     inkscape:cx="-186.62736"
+     inkscape:cy="86.08999"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1366"
-     inkscape:window-height="705"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
+     inkscape:window-width="1440"
+     inkscape:window-height="855"
+     inkscape:window-x="219"
+     inkscape:window-y="1081"
      inkscape:window-maximized="1" />
   <metadata
      id="metadata831">
@@ -44,14 +44,15 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
-     id="layer1">
+     id="layer1"
+     transform="translate(-97.816662,-60.853602)">
     <path
        style="fill:none;fill-opacity:1;stroke:#001a33;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="M 97.895832,76.866667 H 123.825 c -0.7638,13.780174 -4.35803,28.621763 0,40.481253 -7.62346,3.29039 -15.67738,5.57639 -25.400001,3.96875"

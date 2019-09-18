@@ -9,9 +9,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="34.980648mm"
-   height="77.708267mm"
-   viewBox="0 0 34.980648 77.708267"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
    version="1.1"
    id="svg8"
    inkscape:version="0.92.2 5c3e80d, 2017-08-06"
@@ -26,8 +26,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1"
-     inkscape:cx="-188.71963"
-     inkscape:cy="213.01757"
+     inkscape:cx="404.08376"
+     inkscape:cy="739.2687"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -44,15 +44,14 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
-     id="layer1"
-     transform="translate(-109.48548,-80.054453)">
+     id="layer1">
     <path
        style="fill:none;stroke:#001a33;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 110.59583,103.06042 c -2.19109,-24.32881 28.72897,-33.706618 32.67605,-0.66146 0.67453,29.05182 -0.66147,13.36146 -0.1323,39.81979 -0.40169,15.92815 -21.05322,22.36732 -26.25989,0.52917 -2.91042,-25.66459 -0.66585,-8.93407 -6.28386,-39.6875"
@@ -60,7 +59,7 @@
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccc" />
     <ellipse
-       style="fill:none;fill-opacity:1;stroke:#001a33;stroke-width:1;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       style="stroke:#001a33;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stroke-linejoin:round;stroke-linecap:square;paint-order:markers stroke fill;fill:none;fill-opacity:1"
        id="path5376"
        cx="130.175"
        cy="140.63126"

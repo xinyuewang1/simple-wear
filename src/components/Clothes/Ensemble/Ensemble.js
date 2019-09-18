@@ -1,7 +1,12 @@
 import React from "react";
+import PropTypes from "prop-types";
+
+const reqSvgs = require.context("../../assets/ClothingSvg", false, /\.svg$/);
+const ALLSVGS = reqSvgs.keys();
+// console.log(allSvgFilepaths);
 
 // props: clo
-const Garment = props => {
+const Ensemble = props => {
   let ensemble = null;
   const clo = props.clo;
   if (clo <= 0.3) {
@@ -114,6 +119,15 @@ const Garment = props => {
   } else {
     ensemble = null;
   }
+
+  const imagePath = ALLSVGS[0];
+  // const image = reqSvgs(imagePath);
+
+  return <svg src={imagePath} />;
 };
 
-export default Garment;
+Ensemble.propTypes = {
+  clo: PropTypes.number
+};
+
+export default Ensemble;
