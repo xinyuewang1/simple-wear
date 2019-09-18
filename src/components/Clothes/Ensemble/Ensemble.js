@@ -1,10 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const reqSvgs = require.context("../../assets/ClothingSvg", false, /\.svg$/);
-const ALLSVGS = reqSvgs.keys();
-// console.log(allSvgFilepaths);
-
 // props: clo
 const Ensemble = props => {
   let ensemble = null;
@@ -32,14 +28,14 @@ const Ensemble = props => {
     ensemble = ["panties", "thickShirt", "trousers", "socks", "shoes"];
   } else if (0.7 < clo <= 0.8) {
     // 121 0.77
-    ensemble = ["panties", "sweater", "ThickTrousers", "socks", "shoes"];
+    ensemble = ["panties", "sweater", "thickTrousers", "socks", "shoes"];
   } else if (0.8 < clo <= 0.9) {
     // 112
     ensemble = [
       "panties",
       "tShirt",
       "thickShirt",
-      "ThickTrousers",
+      "thickTrousers",
       "socks",
       "shoes"
     ];
@@ -49,7 +45,7 @@ const Ensemble = props => {
       "panties",
       "tShirt",
       "shirt",
-      "ThickTrousers",
+      "thickTrousers",
       "sweater",
       "socks",
       "shoes"
@@ -60,7 +56,7 @@ const Ensemble = props => {
       "panties",
       "tShirt",
       "shirt",
-      "ThickTrousers",
+      "thickTrousers",
       "woolJacket",
       "socks",
       "shoes"
@@ -71,7 +67,7 @@ const Ensemble = props => {
       "panties",
       "tShirt",
       "shirt",
-      "ThickTrousers",
+      "thickTrousers",
       "vest",
       "woolJacket",
       "socks",
@@ -84,7 +80,7 @@ const Ensemble = props => {
       "thermalUnderpants",
       "tShirt",
       "shirt",
-      "ThickTrousers",
+      "thickTrousers",
       "sweater",
       "woolJacket",
       "socks",
@@ -120,10 +116,7 @@ const Ensemble = props => {
     ensemble = null;
   }
 
-  const imagePath = ALLSVGS[0];
-  // const image = reqSvgs(imagePath);
-
-  return <svg src={imagePath} />;
+  return ensemble;
 };
 
 Ensemble.propTypes = {

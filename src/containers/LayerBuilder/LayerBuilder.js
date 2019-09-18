@@ -1,12 +1,13 @@
 import React, { Component } from "react";
 
 import Aux from "../../hoc/Auxiliary";
+import Clothes from "../../components/Clothes/Clothes";
 
 class LayerBuilder extends Component {
   render() {
     return (
       <Aux>
-        <div> Clothes items</div>
+        <Clothes />
         <div> Clothes Controls</div>
       </Aux>
     );
