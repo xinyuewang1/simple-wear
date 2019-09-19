@@ -1,0 +1,16 @@
+<svg width="9.0918mm" height="15.875mm" version="1.1" viewBox="0 0 9.0917739 15.875577" xmlns="http://www.w3.org/2000/svg">
+ <g transform="matrix(.11616 0 0 .11616 -11.375 -7.6578)" fill="none" stroke="#001a33">
+  <path d="m123.65 73.616 25.27 0.37418 25.444 34.424-24.696 24.696v68.1h-50.14" stroke-width="2.753"/>
+  <path d="m149.67 133.11-0.74835-59.12" stroke-width="2.753"/>
+  <path d="m121.79 67.816 3.4396 10.477-18.078 16.036-7.6251-8.0036z" stroke-width="2"/>
+  <path d="m110.11 77.785h-12.204" stroke-width="1.8316"/>
+  <path d="m122.22 66.945h-24.181" stroke-width="2.046"/>
+  <g stroke-width="2">
+   <circle cx="100.67" cy="102.93" r=".66146"/>
+   <circle cx="101.6" cy="161.8" r=".66146"/>
+   <circle cx="101.6" cy="143.28" r=".66146"/>
+   <circle cx="101.6" cy="123.43" r=".66146"/>
+   <circle cx="101.6" cy="179.26" r=".66146"/>
+  </g>
+ </g>
+</svg>

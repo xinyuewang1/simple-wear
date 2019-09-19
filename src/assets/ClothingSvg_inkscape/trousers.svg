@@ -9,12 +9,12 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="210mm"
-   height="297mm"
-   viewBox="0 0 210 297"
+   width="73.702019mm"
+   height="79.141365mm"
+   viewBox="0 0 73.702019 79.141365"
    version="1.1"
    id="svg8"
-   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   inkscape:version="0.92.2 5c3e80d, 2017-08-06"
    sodipodi:docname="trousers.svg">
   <defs
      id="defs2" />
@@ -26,15 +26,15 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1"
-     inkscape:cx="391.79695"
-     inkscape:cy="710.4172"
+     inkscape:cx="-240.42359"
+     inkscape:cy="46.754645"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1366"
-     inkscape:window-height="705"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
+     inkscape:window-width="1920"
+     inkscape:window-height="1058"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
      inkscape:window-maximized="1" />
   <metadata
      id="metadata5">
@@ -51,10 +51,11 @@
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
-     id="layer1">
+     id="layer1"
+     transform="translate(-119.65002,-42.264584)">
     <path
        style="fill:none;stroke:#001a33;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 120.65,43.264584 h 34.66041 l 7.40834,132.291666 h -25.4 L 120.91458,86.391667"
+       d="m 120.65,43.264584 h 34.66041 l 4.23334,76.729166 -30.1625,-7.40833 -8.46667,-26.193753"
        id="path6829"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccc" />
@@ -87,5 +88,11 @@
        d="m 120.91458,86.391667 c 3.37948,2.501935 3.29919,-14.330168 2.48047,-35.288802"
        style="fill:none;stroke:#001a33;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#001a33;stroke-width:2;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       d="m 159.54375,119.99375 32.80833,-36.5125 -16.66875,-16.139583 -17.4625,16.66875"
+       id="path19269"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc" />
   </g>
 </svg>

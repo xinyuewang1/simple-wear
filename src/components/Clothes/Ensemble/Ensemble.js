@@ -4,7 +4,12 @@ import ReactSVG from "react-svg";
 
 import style from "./Ensemble.module.css";
 
-const reqSvgs = require.context("../../../assets/ClothingSvg", false, /\.svg$/);
+const reqSvgs = require.context(
+  "../../../assets/ClothingSvg_icon",
+  false,
+  /\.svg$/
+);
+// console.log(reqSvgs);
 
 // props: clo
 const Ensemble = props => {
@@ -137,9 +142,12 @@ const Ensemble = props => {
   ensemble = ensemble.map(garment => "./" + garment + ".svg");
 
   return (
-    <div>
+    <div className="Ensemble">
       {ensemble.map(path => (
-        <ReactSVG src={reqSvgs(path)} key={path} className={style.Svg} />
+        <div className={style.Container} key={path}>
+          <p>{path.slice(2, -4)}</p>
+          <ReactSVG src={reqSvgs(path)} key={path} className={style.Svg} />
+        </div>
       ))}
     </div>
   );

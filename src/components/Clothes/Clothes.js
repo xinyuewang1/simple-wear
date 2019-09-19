@@ -1,4 +1,5 @@
 import React from "react";
+// import ReactSVG from "react-svg";
 
 import style from "./Clothes.module.css";
 
@@ -8,6 +9,7 @@ const Clothes = props => {
   return (
     <div className={style.Clothes}>
       <Emsemble clo={1} />
+      {/* <ReactSVG src='tShirt.svg' /> */}
     </div>
   );
 };

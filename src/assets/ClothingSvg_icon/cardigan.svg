@@ -1,0 +1,24 @@
+<svg width="8.3595mm" height="15.875mm" version="1.1" viewBox="0 0 8.3594706 15.875018" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <clipPath id="clipPath908">
+   <rect x="93.662" y="59.933" width="79.904" height="144.73" fill="none" stroke="#001a33" stroke-linecap="square" stroke-linejoin="round" style="paint-order:markers stroke fill"/>
+  </clipPath>
+ </defs>
+ <g transform="matrix(.11428 0 0 .11428 -11.375 -7.4122)">
+  <g transform="translate(1.0583,1.0583)" clip-path="url(#clipPath908)" fill="none" stroke="#001a33">
+   <g stroke-width="3">
+    <path d="m122.73 65.758 26.631 8.2319c14.496 20.611 12.895 41.579 20.508 62.816l-24.786 22.277c1.9882 19.7 1.3073 35.195-2.3812 41.862l-42.731 0.26458"/>
+    <path d="m149.41 118.78c3.7339-14.203-0.15441-29.676-0.30998-44.527"/>
+    <path d="m161.27 106.17c-16.227 19.503-36.275 32.891-48.681 58.508l10.953 8.0425c7.2025-12.734 13.168-6.8886 21.54-13.636"/>
+   </g>
+   <path d="m123.44 64.414-21.962 50.107-1.4751 86.682" stroke-width="3.0592"/>
+   <circle cx="109.54" cy="146.98" r="1.3229" stroke-width="3"/>
+   <circle cx="109.54" cy="168.68" r="1.3229" stroke-width="3"/>
+   <g stroke-linecap="square" stroke-linejoin="round">
+    <path d="m124.87 69.215-22.534 52.148" stroke-width="4" style="paint-order:markers stroke fill"/>
+    <path d="m114.7 162.19 9.2604 6.8792" stroke-width="4" style="paint-order:markers stroke fill"/>
+    <path d="m120.52 66.942-17.33 0.39688" stroke-width="3" style="paint-order:markers stroke fill"/>
+   </g>
+  </g>
+ </g>
+</svg>

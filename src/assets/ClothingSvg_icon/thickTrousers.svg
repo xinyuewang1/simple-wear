@@ -1,5 +1,5 @@
-<svg width="69.132mm" height="89.774mm" version="1.1" viewBox="0 0 69.132109 89.772361" xmlns="http://www.w3.org/2000/svg">
- <g transform="translate(-119.15 -41.766)" stroke="#001a33" stroke-width="3">
+<svg width="12.225mm" height="15.875mm" version="1.1" viewBox="0 0 12.224849 15.874728" xmlns="http://www.w3.org/2000/svg">
+ <g transform="matrix(.17683 0 0 .17683 -21.07 -7.3864)" stroke="#001a33" stroke-width="3">
   <g fill="none">
    <path d="m120.65 43.265h37.306c5.837 27.948 2.4067 57.219 1.1067 86.186l-32.033-7.2501-6.1148-43.55" stroke-width="3.0001"/>
    <path d="m120.91 51.202 36.248-1.8521"/>
@@ -9,5 +9,5 @@
   <path d="m120.91 78.653c3.3795 2.5019 5.912-5.8304 5.0932-26.789" fill="none"/>
   <path d="m120.65 43.265v36.021" fill="none"/>
  </g>
- <path d="m39.913 87.685 27.719-39.856-19.091-14.826-5.8899 8.5302" fill="none" stroke="#001a33" stroke-linecap="square" stroke-linejoin="round" stroke-width="3" style="paint-order:markers stroke fill"/>
+ <path d="m7.0579 15.505 4.9017-7.0479-3.376-2.6218-1.0415 1.5084" fill="none" stroke="#001a33" stroke-linecap="square" stroke-linejoin="round" stroke-width=".5305" style="paint-order:markers stroke fill"/>
 </svg>

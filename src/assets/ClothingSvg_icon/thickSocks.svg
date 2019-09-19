@@ -1,0 +1,10 @@
+<svg width="13.731mm" height="15.875mm" version="1.1" viewBox="0 0 13.730951 15.875038" xmlns="http://www.w3.org/2000/svg">
+ <g transform="matrix(.39989 0 0 .39989 9.3139e-5 0)" fill="none" stroke="#001a33">
+  <path d="m18.196 1.5h12.245v18.367c1.7251 0.13788 5.5172 8.0294-2.653 8.9794l-17.755 8.9793c-5.4708 1.8624-12.102-3.6754-6.4118-10.617l15.011-8.6666z" opacity=".96" stroke-width="3"/>
+  <g stroke-linejoin="round" stroke-width="2">
+   <path d="m3.6214 27.208c3.3272 2.3492 6.3021 5.0506 6.4118 10.617" opacity=".96" style="paint-order:markers fill stroke"/>
+   <path d="m30.441 19.867c-3.7176 1.9306-3.1846 5.4552-2.653 8.9794" opacity=".96" style="paint-order:markers fill stroke"/>
+   <path d="m19.305 5.6086 10.383-0.09355" opacity=".96" style="paint-order:markers fill stroke"/>
+  </g>
+ </g>
+</svg>

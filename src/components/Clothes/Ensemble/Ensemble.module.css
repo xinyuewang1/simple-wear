@@ -1,4 +1,24 @@
 .Svg {
-  height: 50%;
-  width: 50%;
+  display: inline-block;
+}
+
+.Svg div {
+  display: flex;
+}
+
+.Svg svg {
+  display: block;
+  height: 12%;
+  width: 12%;
+}
+
+.Container p {
+  display: inline-block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 7px;
+  color: #001a33ff;
+  writing-mode: sideways-rl;
+  text-orientation: mixed;
 }
