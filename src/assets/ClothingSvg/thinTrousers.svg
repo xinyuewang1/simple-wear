@@ -1,92 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="38.316402mm"
-   height="132.50351mm"
-   viewBox="0 0 38.316402 132.50351"
-   version="1.1"
-   id="svg8"
-   inkscape:version="0.92.2 5c3e80d, 2017-08-06"
-   sodipodi:docname="thinTrousers.svg">
-  <defs
-     id="defs2" />
-  <sodipodi:namedview
-     id="base"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:pageopacity="0.0"
-     inkscape:pageshadow="2"
-     inkscape:zoom="1"
-     inkscape:cx="-142.91708"
-     inkscape:cy="271.96114"
-     inkscape:document-units="mm"
-     inkscape:current-layer="layer1"
-     showgrid="false"
-     inkscape:window-width="1440"
-     inkscape:window-height="855"
-     inkscape:window-x="219"
-     inkscape:window-y="1081"
-     inkscape:window-maximized="1" />
-  <metadata
-     id="metadata5">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <g
-     inkscape:label="Layer 1"
-     inkscape:groupmode="layer"
-     id="layer1"
-     transform="translate(-120.15,-42.764584)">
-    <path
-       style="fill:none;stroke:#001a33;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 120.65,43.264584 h 37.30624 L 155.31042,174.7625 132.02709,174.49791 120.91458,78.652604"
-       id="path6829"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="ccccc" />
-    <path
-       style="fill:none;stroke:#001a33;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 120.91458,51.202084 36.24791,-1.852083"
-       id="path6831"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cc" />
-    <path
-       style="fill:none;stroke:#001a33;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 133.87916,50.408334 c 5.68514,5.593941 7.1306,14.01187 24.34167,16.404166"
-       id="path6833"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cc" />
-    <circle
-       style="fill:#001a33;fill-opacity:1;stroke:#001a33;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="path6845"
-       cx="124.78061"
-       cy="47.183407"
-       r="1.022966" />
-    <path
-       inkscape:connector-curvature="0"
-       id="path6853"
-       d="m 120.91458,78.652604 c 3.37948,2.501935 5.91195,-5.830428 5.09323,-26.789062"
-       style="fill:none;stroke:#001a33;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       sodipodi:nodetypes="cc" />
-    <path
-       style="fill:none;fill-opacity:1;stroke:#001a33;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="M 120.65,43.264584 V 79.285713"
-       id="path5457"
-       inkscape:connector-curvature="0" />
+<svg width="38.316mm" height="132.5mm" version="1.1" viewBox="0 0 38.316402 132.50351" xmlns="http://www.w3.org/2000/svg">
+ <g transform="translate(-120.15 -42.765)" stroke="#001a33">
+  <g fill="none">
+   <path d="m120.65 43.265h37.306l-2.6458 131.5-23.283-0.26459-11.113-95.845"/>
+   <path d="m120.91 51.202 36.248-1.8521"/>
+   <path d="m133.88 50.408c5.6851 5.5939 7.1306 14.012 24.342 16.404"/>
   </g>
+  <circle cx="124.78" cy="47.183" r="1.023" fill="#001a33"/>
+  <path d="m120.91 78.653c3.3795 2.5019 5.912-5.8304 5.0932-26.789" fill="none"/>
+  <path d="m120.65 43.265v36.021" fill="none"/>
+ </g>
 </svg>

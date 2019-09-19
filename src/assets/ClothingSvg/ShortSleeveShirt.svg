@@ -1,115 +1,16 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="78.267693mm"
-   height="136.66498mm"
-   viewBox="0 0 78.267693 136.66498"
-   version="1.1"
-   id="svg8"
-   inkscape:version="0.92.2 5c3e80d, 2017-08-06"
-   sodipodi:docname="shortSleeveShirt.svg">
-  <defs
-     id="defs2" />
-  <sodipodi:namedview
-     id="base"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:pageopacity="0.0"
-     inkscape:pageshadow="2"
-     inkscape:zoom="1"
-     inkscape:cx="-314.89073"
-     inkscape:cy="242.774"
-     inkscape:document-units="mm"
-     inkscape:current-layer="layer1"
-     showgrid="false"
-     inkscape:window-width="1440"
-     inkscape:window-height="855"
-     inkscape:window-x="219"
-     inkscape:window-y="1081"
-     inkscape:window-maximized="1" />
-  <metadata
-     id="metadata5">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <g
-     inkscape:label="Layer 1"
-     inkscape:groupmode="layer"
-     id="layer1"
-     transform="translate(-97.910505,-65.92212)">
-    <path
-       style="fill:none;stroke:#001a33;stroke-width:2.75300002;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 123.65231,73.616128 25.27028,0.374177 25.44405,34.424315 -24.6957,24.6957 V 201.2106 H 99.531176"
-       id="path5126"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cccccc" />
-    <path
-       sodipodi:nodetypes="cc"
-       inkscape:connector-curvature="0"
-       id="path5136"
-       d="M 149.67094,133.11032 148.92259,73.990305"
-       style="fill:none;stroke:#001a33;stroke-width:2.75300002;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-    <path
-       style="fill:none;fill-opacity:1;stroke:#001a33;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 121.79472,67.81638 3.43958,10.476965 -18.07805,16.03582 -7.625076,-8.003647 z"
-       id="path9180"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="ccccc" />
-    <path
-       style="fill:none;fill-opacity:1;stroke:#001a33;stroke-width:1.83157194;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="M 110.11481,77.784683 H 97.910505"
-       id="path9184"
-       inkscape:connector-curvature="0" />
-    <path
-       style="fill:none;fill-opacity:1;stroke:#001a33;stroke-width:2.04602957;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="M 122.21567,66.945135 H 98.034772"
-       id="path9186"
-       inkscape:connector-curvature="0" />
-    <circle
-       style="fill:none;fill-opacity:1;stroke:#001a33;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="path9222"
-       cx="104.90729"
-       cy="102.92812"
-       r="0.66145831" />
-    <circle
-       style="fill:none;fill-opacity:1;stroke:#001a33;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="path9222-6"
-       cx="105.83334"
-       cy="161.79793"
-       r="0.66145831" />
-    <circle
-       style="fill:none;fill-opacity:1;stroke:#001a33;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="path9222-2"
-       cx="105.83334"
-       cy="143.27708"
-       r="0.66145831" />
-    <circle
-       style="fill:none;fill-opacity:1;stroke:#001a33;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="path9222-4"
-       cx="105.83334"
-       cy="123.43334"
-       r="0.66145831" />
-    <circle
-       style="fill:none;fill-opacity:1;stroke:#001a33;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="path9222-41"
-       cx="105.83332"
-       cy="179.26042"
-       r="0.66145831" />
+<svg width="78.268mm" height="136.66mm" version="1.1" viewBox="0 0 78.267693 136.66498" xmlns="http://www.w3.org/2000/svg">
+ <g transform="translate(-97.911 -65.922)" fill="none" stroke="#001a33">
+  <path d="m123.65 73.616 25.27 0.37418 25.444 34.424-24.696 24.696v68.1h-50.14" stroke-width="2.753"/>
+  <path d="m149.67 133.11-0.74835-59.12" stroke-width="2.753"/>
+  <path d="m121.79 67.816 3.4396 10.477-18.078 16.036-7.6251-8.0036z" stroke-width="2"/>
+  <path d="m110.11 77.785h-12.204" stroke-width="1.8316"/>
+  <path d="m122.22 66.945h-24.181" stroke-width="2.046"/>
+  <g stroke-width="2">
+   <circle cx="100.67" cy="102.93" r=".66146"/>
+   <circle cx="101.6" cy="161.8" r=".66146"/>
+   <circle cx="101.6" cy="143.28" r=".66146"/>
+   <circle cx="101.6" cy="123.43" r=".66146"/>
+   <circle cx="101.6" cy="179.26" r=".66146"/>
   </g>
+ </g>
 </svg>
