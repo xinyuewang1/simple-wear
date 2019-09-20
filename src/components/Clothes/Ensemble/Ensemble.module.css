@@ -12,13 +12,15 @@
   width: 12%; */
 }
 
+.Container {
+  display: inline-block;
+}
+
 .Container p {
   display: inline-block;
-  margin-block-start: 1em;
+  margin-block-start: 0em;
   margin-block-end: 1em;
-  margin-inline-start: 0px;
+  margin-inline-start: 4px;
   margin-inline-end: 7px;
   color: #001a33ff;
-  writing-mode: sideways-rl;
-  text-orientation: mixed;
 }

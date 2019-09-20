@@ -8,7 +8,7 @@ import Emsemble from "./Ensemble/Ensemble";
 const Clothes = props => {
   return (
     <div className={style.Clothes}>
-      <Emsemble clo={1} />
+      <Emsemble clo={0.97} />
       {/* <ReactSVG src='tShirt.svg' /> */}
     </div>
   );
