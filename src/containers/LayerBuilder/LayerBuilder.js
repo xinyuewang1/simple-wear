@@ -21,13 +21,14 @@ const LayerBuilder = () => {
   }, []);
 
   useEffect(() => {
-    // 18.6 is hard code for walking speed 120, change later.
+    // TODO - 18.6 is hard code for walking speed 120, change later.
     const newClo = (31 - temp) / 18.6;
     setClo(newClo);
   }, [clo]);
 
   return (
     <Aux>
+      {/* TODO - placeholder LOADING, change to sth else later. */}
       {clo ? <Clothes clo={clo} /> : <div>LOADING...</div>}
       <div> Clothes Controls</div>
     </Aux>
