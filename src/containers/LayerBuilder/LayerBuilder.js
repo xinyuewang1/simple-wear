@@ -9,20 +9,21 @@ const LayerBuilder = () => {
   const [clo, setClo] = useState();
 
   useEffect(() => {
-    const getTemp = async () => {
-      let weatherData = await axios.get("url here");
+    setTemp(16);
+    // const getTemp = async () => {
+    //   // let weatherData = await axios.get("url here");
+    //   // process and extract temperature .... const temperature = ....
 
-      // process and extract temperature .... const temperature = ....
+    //   return temperature;
+    // };
 
-      return temperature;
-    };
-
-    setTemp(getTemp());
+    // setTemp(getTemp());
   }, []);
 
   useEffect(() => {
-    vdsgfsfs;
-    setClo(eskjhsfsjj);
+    // 18.6 is hard code for walking speed 120, change later.
+    const newClo = (31 - temp) / 18.6;
+    setClo(newClo);
   }, [clo]);
 
   return (
