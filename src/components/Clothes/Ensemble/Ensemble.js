@@ -29,7 +29,7 @@ const Ensemble = props => {
     // 0.36 102
     ensemble = [
       // "panties",
-      "shortSleeveShirt",
+      "ShortSleeveShirt",
       "shorts",
       "socks",
       "shoes"
