@@ -1,3 +1,10 @@
+# Refs:
+
+[Clothing Insulation Wiki](https://en.wikipedia.org/wiki/Clothing_insulation).
+
+[ISO 9920:2007
+Ergonomics of the thermal environment — Estimation of thermal insulation and water vapour resistance of a clothing ensemble](https://www.iso.org/standard/39257.html).
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

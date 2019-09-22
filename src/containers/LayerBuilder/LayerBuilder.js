@@ -9,7 +9,7 @@ const LayerBuilder = () => {
   const [clo, setClo] = useState();
 
   useEffect(() => {
-    setTemp(16);
+    setTemp(13);
     // const getTemp = async () => {
     //   // let weatherData = await axios.get("url here");
     //   // process and extract temperature .... const temperature = ....
