@@ -1,0 +1,20 @@
+LayerBuilder.js:24 {data: Array(12), status: 200, statusText: "OK", headers: {…}, config: {…}, …}config: {url: "http://dataservice.accuweather.com/forecasts/v1/ho…ur/207931?apikey=yVLlfK76YsRjgZKU3Gyo1EaDF35dKP4E", method: "get", headers: {…}, transformRequest: Array(1), transformResponse: Array(1), …}data: (12) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]0: DateTime: "2019-09-22T21:00:00+01:00"EpochDateTime: 1569182400HasPrecipitation: falseIconPhrase: "Intermittent clouds"IsDaylight: falseLink: "http://www.accuweather.com/en/ie/dublin/207931/hourly-weather-forecast/207931?day=1&hbhhour=21&lang=en-us"MobileLink: "http://m.accuweather.com/en/ie/dublin/207931/hourly-weather-forecast/207931?day=1&hbhhour=21&lang=en-us"PrecipitationProbability: 20Temperature: Unit: "F"UnitType: 18Value: 58__proto__: ObjectWeatherIcon: 36__proto__: Object1: {DateTime: "2019-09-22T22:00:00+01:00", EpochDateTime: 1569186000, WeatherIcon: 36, IconPhrase: "Intermittent clouds", HasPrecipitation: false, …}2: {DateTime: "2019-09-22T23:00:00+01:00", EpochDateTime: 1569189600, WeatherIcon: 36, IconPhrase: "Intermittent clouds", HasPrecipitation: false, …}3: {DateTime: "2019-09-23T00:00:00+01:00", EpochDateTime: 1569193200, WeatherIcon: 35, IconPhrase: "Partly cloudy", HasPrecipitation: false, …}4: {DateTime: "2019-09-23T01:00:00+01:00", EpochDateTime: 1569196800, WeatherIcon: 35, IconPhrase: "Partly cloudy", HasPrecipitation: false, …}5: {DateTime: "2019-09-23T02:00:00+01:00", EpochDateTime: 1569200400, WeatherIcon: 35, IconPhrase: "Partly cloudy", HasPrecipitation: false, …}6: {DateTime: "2019-09-23T03:00:00+01:00", EpochDateTime: 1569204000, WeatherIcon: 35, IconPhrase: "Partly cloudy", HasPrecipitation: false, …}7: {DateTime: "2019-09-23T04:00:00+01:00", EpochDateTime: 1569207600, WeatherIcon: 35, IconPhrase: "Partly cloudy", HasPrecipitation: false, …}8: {DateTime: "2019-09-23T05:00:00+01:00", EpochDateTime: 1569211200, WeatherIcon: 35, IconPhrase: "Partly cloudy", HasPrecipitation: false, …}9: {DateTime: "2019-09-23T06:00:00+01:00", EpochDateTime: 1569214800, WeatherIcon: 35, IconPhrase: "Partly cloudy", HasPrecipitation: false, …}10: {DateTime: "2019-09-23T07:00:00+01:00", EpochDateTime: 1569218400, WeatherIcon: 35, IconPhrase: "Partly cloudy", HasPrecipitation: false, …}11: {DateTime: "2019-09-23T08:00:00+01:00", EpochDateTime: 1569222000, WeatherIcon: 7, IconPhrase: "Cloudy", HasPrecipitation: false, …}length: 12__proto__: Array(0)headers: {content-type: "application/json; charset=utf-8", cache-control: "public, max-age=1052", expires: "Sun, 22 Sep 2019 20:10:50 GMT"}request: XMLHttpRequest {onreadystatechange: ƒ, readyState: 4, timeout: 0, withCredentials: false, upload: XMLHttpRequestUpload, …}status: 200statusText: "OK"__proto__: Object
+backend.js:1 ./src/containers/LayerBuilder/LayerBuilder.js
+  Line 36:  React Hook useEffect has a missing dependency: 'temp'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+r @ backend.js:1
+printWarnings @ webpackHotDevClient.js:120
+handleWarnings @ webpackHotDevClient.js:125
+push../node_modules/react-dev-utils/webpackHotDevClient.js.connection.onmessage @ webpackHotDevClient.js:190
+push../node_modules/sockjs-client/lib/event/eventtarget.js.EventTarget.dispatchEvent @ eventtarget.js:56
+(anonymous) @ main.js:282
+push../node_modules/sockjs-client/lib/main.js.SockJS._transportMessage @ main.js:280
+push../node_modules/sockjs-client/lib/event/emitter.js.EventEmitter.emit @ emitter.js:53
+WebSocketTransport.ws.onmessage @ websocket.js:36
+webpackHotDevClient.js:65 The development server has disconnected.
+Refresh the page if necessary.
+temp1
+{data: Array(12), status: 200, statusText: "OK", headers: {…}, config: {…}, …}
+temp1 >> sample.json
+VM1371:1 Uncaught ReferenceError: sample is not defined
+    at <anonymous>:1:10
+(anonymous) @ VM1371:1
