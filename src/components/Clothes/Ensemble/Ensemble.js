@@ -132,7 +132,7 @@ const Ensemble = props => {
       "thermalUnderpants",
       "tShirt",
       "shirt",
-      "thickTrousers", // TODO - double check this.
+      "thickTrousers",
       "sweater",
       "woolJacket",
       "socks",
