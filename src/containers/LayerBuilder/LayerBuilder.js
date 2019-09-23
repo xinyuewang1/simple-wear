@@ -19,14 +19,19 @@ const LayerBuilder = () => {
 
     //   let weatherData = await axios.get(
     //     // TODO - Remove this, only for developing, not secure!
-    //     `http://dataservice.accuweather.com/forecasts/v1/hourly/12hour/207931?apikey=${process.env.REACT_APP_ACCU_KEY}`
+    //     `http://dataservice.accuweather.com/forecasts/v1/hourly/1hour/207931?apikey=${process.env.REACT_APP_ACCU_KEY}&details=true`
+    //     //     `http://dataservice.accuweather.com/forecasts/v1/hourly/12hour/207931?apikey=${process.env.REACT_APP_ACCU_KEY}`
     //   );
     //   // process and extract temperature .... const temperature = ....
     //   // console.log(weatherData.data[0].Temperature.Value);
     //   // TODO - This is hard coded only for current temperature.
-    //   const temperature =
-    //     ((weatherData.data[0].Temperature.Value - 32) * 5) / 9;
-    //   return temperature;
+    //   if (weatherData.data[0].RealFeelTemperature.Unit === "F") {
+    //     const temperature =
+    //       ((weatherData.data[0].RealFeelTemperature.Value - 32) * 5) / 9;
+    //     return temperature;
+    //   } else {
+    //     return weatherData.data[0].RealFeelTemperature.Value;
+    //   }
     // };
 
     // setTemp(getTemp());
@@ -42,15 +47,21 @@ const LayerBuilder = () => {
     }
   }, [temp]);
 
-  // console.log(`[LayerBuilder] clo: ${clo}`);
+  // console.log(`[LayerBuilder] clo: ${typeof clo}`);
   // console.log(`clo !== "undefined" ${clo !== undefined}`);
   // debugger;
+  // console.log(temp);
 
   return (
     <Aux>
       {/* TODO - placeholder LOADING, change to sth nicer later. */}
       {clo !== undefined && temp !== undefined ? (
-        <Clothes clo={clo} />
+        <div>
+          <p>
+            <strong>Current temperature: {temp} °C</strong>
+          </p>
+          <Clothes clo={clo} />
+        </div>
       ) : (
         <div>LOADING...</div>
       )}
