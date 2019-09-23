@@ -56,11 +56,13 @@ const LayerBuilder = () => {
       )}
       <AdvanceSettings
         less={() => {
-          setClo(clo - 0.1);
+          if (clo > 0) setClo(clo - 0.1);
         }}
         more={() => {
-          setClo(clo + 0.1);
+          if (clo < 1.5) setClo(clo + 0.1);
         }}
+        disableLess={clo <= 0}
+        disableMore={clo >= 1.5}
       />
     </Aux>
   );

@@ -165,6 +165,8 @@ const Ensemble = props => {
       "socks",
       "shoes"
     ];
+
+    // TODO - add clo 1.6 and 1.7.
   } else {
     ensemble = null;
     // console.log("Fall in else.");
@@ -186,9 +188,9 @@ const Ensemble = props => {
     );
   } else {
     if (clo <= 0) {
-      return <p>Too hot to wear anything.</p>;
+      return <p>Maybe it's too hot to wear anything for you.</p>;
     } else if (clo > 1.5) {
-      return <p>Too cold to go outside.</p>;
+      return <p>Maybe it's too cold to go outside.</p>;
     }
   }
 };
