@@ -15,6 +15,8 @@ const reqSvgs = require.context(
 const Ensemble = props => {
   let ensemble = null;
   const clo = props.clo;
+  // console.log(`in Ensemble ${clo}`);
+
   // eslint-disable-next-line
   if (clo <= 0.3) {
     // 0.23 101
@@ -25,7 +27,7 @@ const Ensemble = props => {
       "sandals"
     ];
     // eslint-disable-next-line
-  } else if (0.3 < clo <= 0.4) {
+  } else if (0.3 < clo && clo <= 0.4) {
     // 0.36 102
     ensemble = [
       // "panties",
@@ -35,7 +37,7 @@ const Ensemble = props => {
       "shoes"
     ];
     // eslint-disable-next-line
-  } else if (0.4 < clo <= 0.5) {
+  } else if (0.4 < clo && clo <= 0.5) {
     // 0.49 107
     ensemble = [
       // "panties",
@@ -45,7 +47,7 @@ const Ensemble = props => {
       "shoes"
     ];
     // eslint-disable-next-line
-  } else if (0.5 < clo <= 0.6) {
+  } else if (0.5 < clo && clo <= 0.6) {
     // 0.6 108
     ensemble = [
       // "panties",
@@ -55,7 +57,7 @@ const Ensemble = props => {
       "shoes"
     ];
     // eslint-disable-next-line
-  } else if (0.6 < clo <= 0.7) {
+  } else if (0.6 < clo && clo <= 0.7) {
     // 203
     ensemble = [
       // "panties",
@@ -65,7 +67,7 @@ const Ensemble = props => {
       "shoes"
     ];
     // eslint-disable-next-line
-  } else if (0.7 < clo <= 0.8) {
+  } else if (0.7 < clo && clo <= 0.8) {
     // 121 0.77
     ensemble = [
       // "panties",
@@ -75,7 +77,7 @@ const Ensemble = props => {
       "shoes"
     ];
     // eslint-disable-next-line
-  } else if (0.8 < clo <= 0.9) {
+  } else if (0.8 < clo && clo <= 0.9) {
     // 112
     ensemble = [
       // "panties",
@@ -86,7 +88,7 @@ const Ensemble = props => {
       "shoes"
     ];
     // eslint-disable-next-line
-  } else if (0.9 < clo <= 1) {
+  } else if (0.9 < clo && clo <= 1) {
     // 114
     ensemble = [
       // "panties",
@@ -98,7 +100,7 @@ const Ensemble = props => {
       "shoes"
     ];
     // eslint-disable-next-line
-  } else if (1 < clo <= 1.1) {
+  } else if (1 < clo && clo <= 1.1) {
     // 118
     ensemble = [
       // "panties",
@@ -110,7 +112,7 @@ const Ensemble = props => {
       "shoes"
     ];
     // eslint-disable-next-line
-  } else if (1.1 < clo <= 1.2) {
+  } else if (1.1 < clo && clo <= 1.2) {
     // 117 1.16
     ensemble = [
       // "panties",
@@ -123,7 +125,7 @@ const Ensemble = props => {
       "shoes"
     ];
     // eslint-disable-next-line
-  } else if (1.2 < clo <= 1.3) {
+  } else if (1.2 < clo && clo <= 1.3) {
     // 129 1.3
     ensemble = [
       // "panties",
@@ -137,7 +139,7 @@ const Ensemble = props => {
       "shoes"
     ];
     // eslint-disable-next-line
-  } else if (1.3 < clo <= 1.4) {
+  } else if (1.3 < clo && clo <= 1.4) {
     // 450 1.37
     ensemble = [
       // "panties",
@@ -151,7 +153,7 @@ const Ensemble = props => {
       "shoes"
     ];
     // eslint-disable-next-line
-  } else if (1.4 < clo <= 1.5) {
+  } else if (1.4 < clo && clo <= 1.5) {
     // 445 1.49
     ensemble = [
       // "panties",
@@ -166,8 +168,9 @@ const Ensemble = props => {
     ];
   } else {
     ensemble = null;
+    // console.log("Fall in else.");
   }
-  console.log(ensemble);
+  // console.log(ensemble);
   ensemble = ensemble.map(garment => "./" + garment + ".svg");
 
   return (

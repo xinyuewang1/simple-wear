@@ -5,7 +5,7 @@ import Aux from "../../hoc/Auxiliary";
 import Clothes from "../../components/Clothes/Clothes";
 
 const LayerBuilder = () => {
-  const [temp, setTemp] = useState(0);
+  const [temp, setTemp] = useState();
   const [clo, setClo] = useState();
 
   useEffect(() => {
@@ -33,18 +33,26 @@ const LayerBuilder = () => {
 
   useEffect(() => {
     // console.log(temp);
-    // TODO - 18.6 is hard code for walking speed 120, change later.
-    const newClo = (31 - temp) / 18.6;
-    setClo(newClo);
+    if (temp !== undefined) {
+      // TODO - 18.6 is hard code for walking speed 120, change later.
+      const newClo = (31 - temp) / 18.6;
+      // console.log(`NewClo after temp update: ${newClo}`);
+      setClo(newClo);
+    }
   }, [temp]);
 
-  console.log(clo);
+  // console.log(`[LayerBuilder] clo: ${clo}`);
+  // console.log(`clo !== "undefined" ${clo !== undefined}`);
   // debugger;
 
   return (
     <Aux>
       {/* TODO - placeholder LOADING, change to sth else later. */}
-      {clo !== "undefined" ? <Clothes clo={clo} /> : <div>LOADING...</div>}
+      {clo !== undefined && temp !== undefined ? (
+        <Clothes clo={clo} />
+      ) : (
+        <div>LOADING...</div>
+      )}
       <div> Clothes Controls</div>
     </Aux>
   );

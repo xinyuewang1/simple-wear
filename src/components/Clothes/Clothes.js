@@ -5,6 +5,7 @@ import style from "./Clothes.module.css";
 import Emsemble from "./Ensemble/Ensemble";
 
 const Clothes = ({ clo }) => {
+//   console.log(`In Clothes ${clo}`);
   return (
     <div className={style.Clothes}>
       <Emsemble clo={clo} />
