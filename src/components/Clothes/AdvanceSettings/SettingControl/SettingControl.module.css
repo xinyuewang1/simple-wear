@@ -1,0 +1,58 @@
+.SettingControl {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 0;
+}
+
+.SettingControl button {
+  display: block;
+  font: inherit;
+  padding: 5px;
+  margin: 0 5px;
+  width: 80px;
+  border: 1px solid #d9e6f2;
+  cursor: pointer;
+  outline: none;
+}
+
+.SettingControl button:disabled {
+  background-color: #8cb3d9;
+  border: 1px solid #79a6d2;
+  color: #ccc;
+  cursor: default;
+}
+
+.SettingControl button:hover:disabled {
+  background-color: #ac9980;
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+.Label {
+  padding: 10px;
+  font-weight: bold;
+  width: 80px;
+}
+
+.SettingControl .TooHot {
+  background-color: #ffebcc;
+  color: black;
+}
+
+.SettingControl .TooCold {
+  background-color: #c6d9ec;
+  color: black;
+}
+
+.SettingControl .TooHot:hover,
+.SettingControl .TooHot:active {
+  background-color: #daa972;
+  color: white;
+}
+
+.SettingControl .TooCold:hover,
+.SettingControl .TooCold:active {
+  background-color: #99703f;
+  color: white;
+}

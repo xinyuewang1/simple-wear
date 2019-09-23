@@ -17,8 +17,7 @@ const Ensemble = props => {
   const clo = props.clo;
   // console.log(`in Ensemble ${clo}`);
 
-  // eslint-disable-next-line
-  if (clo <= 0.3) {
+  if (0 < clo && clo <= 0.3) {
     // 0.23 101
     ensemble = [
       // "panties",
@@ -170,19 +169,28 @@ const Ensemble = props => {
     ensemble = null;
     // console.log("Fall in else.");
   }
-  // console.log(ensemble);
-  ensemble = ensemble.map(garment => "./" + garment + ".svg");
 
-  return (
-    <div className="Ensemble">
-      {ensemble.map(path => (
-        <div className={style.Container} key={path}>
-          <p>{path.slice(2, -4)}</p>
-          <ReactSVG src={reqSvgs(path)} key={path} className={style.Svg} />
-        </div>
-      ))}
-    </div>
-  );
+  if (ensemble !== null) {
+    // console.log(ensemble);
+    ensemble = ensemble.map(garment => "./" + garment + ".svg");
+
+    return (
+      <div className="Ensemble">
+        {ensemble.map(path => (
+          <div className={style.Container} key={path}>
+            <p>{path.slice(2, -4)}</p>
+            <ReactSVG src={reqSvgs(path)} key={path} className={style.Svg} />
+          </div>
+        ))}
+      </div>
+    );
+  } else {
+    if (clo <= 0) {
+      return <p>Too hot to wear anything.</p>;
+    } else if (clo > 1.5) {
+      return <p>Too cold to go outside.</p>;
+    }
+  }
 };
 
 Ensemble.propTypes = {
