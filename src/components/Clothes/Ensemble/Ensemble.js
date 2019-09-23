@@ -167,7 +167,7 @@ const Ensemble = props => {
   } else {
     ensemble = null;
   }
-
+  console.log(ensemble);
   ensemble = ensemble.map(garment => "./" + garment + ".svg");
 
   return (

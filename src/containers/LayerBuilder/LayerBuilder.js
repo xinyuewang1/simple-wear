@@ -9,7 +9,7 @@ const LayerBuilder = () => {
   const [clo, setClo] = useState();
 
   useEffect(() => {
-    setTemp(13);
+    setTemp(8);
     // const getTemp = async () => {
     //   // Dublin: 207931
     //   // debugger;
@@ -32,10 +32,14 @@ const LayerBuilder = () => {
   }, []);
 
   useEffect(() => {
+    // console.log(temp);
     // TODO - 18.6 is hard code for walking speed 120, change later.
     const newClo = (31 - temp) / 18.6;
     setClo(newClo);
   }, [temp]);
+
+  console.log(clo);
+  // debugger;
 
   return (
     <Aux>
