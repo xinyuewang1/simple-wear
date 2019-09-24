@@ -9,7 +9,7 @@ const LayerBuilder = () => {
   const [clo, setClo] = useState();
 
   useEffect(() => {
-    setTemp(8);
+    setTemp(14);
     // const getTemp = async () => {
     //   // Dublin: 207931
     //   // debugger;
