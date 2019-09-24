@@ -1,0 +1,10 @@
+.AdvSettings {
+  width: 100%;
+  /* background-color: #c6d9ec; */
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  /* box-shadow: 0 2px 1px #b3cce6; */
+  margin: auto;
+  padding: 10px 0;
+}
