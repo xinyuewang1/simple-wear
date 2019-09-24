@@ -5,5 +5,12 @@
   display: flex;
   align-items: center;
   height: 100%;
-  /* justify-content: center; */
+  flex-flow: column;
+}
+
+/* Iphone 6s pixel size: 750 x 1334 */
+@media (min-width: 750px) {
+  .NavigationItems {
+    flex-flow: row;
+  }
 }
