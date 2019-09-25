@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
-import Aux from "../../hoc/Auxiliary";
+import Aux from "../../hoc/Auxiliary/Auxiliary";
 import Clothes from "../../components/Clothes/Clothes";
 import AdvanceSettings from "../../components/Clothes/AdvanceSettings/AdvanceSettings";
 
