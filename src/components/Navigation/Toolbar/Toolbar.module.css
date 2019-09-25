@@ -17,3 +17,17 @@
 .Toolbar nav {
   height: 100%;
 }
+
+.Logo {
+  height: 95%;
+  box-sizing: border-box;
+  border-radius: 30px;
+  background-color: #9fbfdf;
+  padding: 7px;
+}
+
+@media (max-width: 750px) {
+  .DesktopOnly {
+    display: none;
+  }
+}
