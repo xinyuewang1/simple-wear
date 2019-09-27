@@ -11,7 +11,8 @@ const LayerBuilder = () => {
   const [er, setEr] = useState(false);
 
   useEffect(() => {
-    setTemp(8);
+    // setTemp(8);
+
     // Dublin: 207931
     // debugger;
 
@@ -23,18 +24,41 @@ const LayerBuilder = () => {
     //     //     `http://dataservice.accuweather.com/forecasts/v1/hourly/12hour/207931?apikey=${process.env.REACT_APP_ACCU_KEY}`
     //   )
     //   .then(weatherData => {
-    //     // TODO - This is hard coded only for current temperature.
-    //     if (weatherData.data[0].RealFeelTemperature.Unit === "F") {
-    //       const temperature =
-    //         ((weatherData.data[0].RealFeelTemperature.Value - 32) * 5) / 9;
-    //       setTemp(Math.round(temperature));
-    //     } else {
-    //       setTemp(Math.round(weatherData.data[0].RealFeelTemperature.Value));
-    //     }
+    // // TODO - This is hard coded only for current temperature.
+    // if (weatherData.data[0].RealFeelTemperature.Unit === "F") {
+    //   const temperature =
+    //     ((weatherData.data[0].RealFeelTemperature.Value - 32) * 5) / 9;
+    //   setTemp(Math.round(temperature));
+    // } else {
+    //   setTemp(Math.round(weatherData.data[0].RealFeelTemperature.Value));
+    // }
     //   })
     //   .catch(error => {
     //     setEr(true);
     //   });
+
+    const getTemp = async () => {
+      try {
+        const weatherData = await axios.get(
+          // TODO - Remove this, only for developing, not secure!
+          `http://dataservice.accuweather.com/forecasts/v1/hourly/1hour/207931?apikey=${process.env.REACT_APP_ACCU_KEY}&details=true`
+          //     `http://dataservice.accuweather.com/forecasts/v1/hourly/12hour/207931?apikey=${process.env.REACT_APP_ACCU_KEY}`
+        );
+
+        // TODO - This is hard coded only for current temperature.
+        if (weatherData.data[0].RealFeelTemperature.Unit === "F") {
+          const temperature =
+            ((weatherData.data[0].RealFeelTemperature.Value - 32) * 5) / 9;
+          setTemp(Math.round(temperature));
+        } else {
+          setTemp(Math.round(weatherData.data[0].RealFeelTemperature.Value));
+        }
+      } catch (err) {
+        setEr(true);
+      }
+    };
+
+    getTemp();
   }, []);
 
   useEffect(() => {
