@@ -5,6 +5,7 @@ import Aux from "../../hoc/Auxiliary/Auxiliary";
 import Clothes from "../../components/Clothes/Clothes";
 import AdvanceSettings from "../../components/Clothes/AdvanceSettings/AdvanceSettings";
 import Spinner from "../../components/UI/Spinner/Spinner";
+import WithErrorHandler from "../../hoc/WithErrorHandler/WithErrorHandler";
 
 const LayerBuilder = () => {
   const [temp, setTemp] = useState();
@@ -12,6 +13,7 @@ const LayerBuilder = () => {
   const [er, setEr] = useState(false);
 
   useEffect(() => {
+    // Dummy data for develop
     setTemp(8);
 
     // Dublin: 207931
@@ -86,4 +88,4 @@ const LayerBuilder = () => {
   }
 };
 
-export default LayerBuilder;
+export default WithErrorHandler(LayerBuilder, axios);
