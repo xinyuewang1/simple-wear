@@ -4,6 +4,7 @@ import axios from "axios";
 import Aux from "../../hoc/Auxiliary/Auxiliary";
 import Clothes from "../../components/Clothes/Clothes";
 import AdvanceSettings from "../../components/Clothes/AdvanceSettings/AdvanceSettings";
+import Spinner from "../../components/UI/Spinner/Spinner";
 
 const LayerBuilder = () => {
   const [temp, setTemp] = useState();
@@ -60,7 +61,6 @@ const LayerBuilder = () => {
   } else {
     return (
       <Aux>
-        {/* TODO - placeholder LOADING, change to sth nicer later. */}
         {clo !== undefined && temp !== undefined ? (
           <div>
             <p>
@@ -69,7 +69,7 @@ const LayerBuilder = () => {
             <Clothes clo={clo} />
           </div>
         ) : (
-          <div>LOADING...</div>
+          <Spinner />
         )}
         <AdvanceSettings
           less={() => {
