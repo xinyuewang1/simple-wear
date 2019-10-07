@@ -1,40 +1,46 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
-import Aux from "../../hoc/Auxiliary";
+import Aux from "../../hoc/Auxiliary/Auxiliary";
 import Clothes from "../../components/Clothes/Clothes";
 import AdvanceSettings from "../../components/Clothes/AdvanceSettings/AdvanceSettings";
+import Spinner from "../../components/UI/Spinner/Spinner";
+import WithErrorHandler from "../../hoc/WithErrorHandler/WithErrorHandler";
 
 const LayerBuilder = () => {
   const [temp, setTemp] = useState();
   const [clo, setClo] = useState();
+  const [er, setEr] = useState(false);
 
   useEffect(() => {
-    setTemp(11);
-    // const getTemp = async () => {
-    //   // Dublin: 207931
-    //   // debugger;
+    // Dummy data for develop
+    // setTemp(8);
 
-    //   // console.log(process.env.REACT_APP_ACCU_KEY);
+    // Dublin: 207931
+    // debugger;
 
-    //   let weatherData = await axios.get(
-    //     // TODO - Remove this, only for developing, not secure!
-    //     `http://dataservice.accuweather.com/forecasts/v1/hourly/1hour/207931?apikey=${process.env.REACT_APP_ACCU_KEY}&details=true`
-    //     //     `http://dataservice.accuweather.com/forecasts/v1/hourly/12hour/207931?apikey=${process.env.REACT_APP_ACCU_KEY}`
-    //   );
-    //   // process and extract temperature .... const temperature = ....
-    //   // console.log(weatherData.data[0].Temperature.Value);
-    //   // TODO - This is hard coded only for current temperature.
-    //   if (weatherData.data[0].RealFeelTemperature.Unit === "F") {
-    //     const temperature =
-    //       ((weatherData.data[0].RealFeelTemperature.Value - 32) * 5) / 9;
-    //     return temperature;
-    //   } else {
-    //     return weatherData.data[0].RealFeelTemperature.Value;
-    //   }
-    // };
+    const getTemp = async () => {
+      try {
+        const weatherData = await axios.get(
+          // TODO - Remove this, only for developing, not secure!
+          `http://dataservice.accuweather.com/forecasts/v1/hourly/1hour/207931?apikey=${process.env.REACT_APP_ACCU_KEY}&details=true`
+          //     `http://dataservice.accuweather.com/forecasts/v1/hourly/12hour/207931?apikey=${process.env.REACT_APP_ACCU_KEY}`
+        );
 
-    // setTemp(getTemp());
+        // TODO - This is hard coded only for current temperature.
+        if (weatherData.data[0].RealFeelTemperature.Unit === "F") {
+          const temperature =
+            ((weatherData.data[0].RealFeelTemperature.Value - 32) * 5) / 9;
+          setTemp(Math.round(temperature));
+        } else {
+          setTemp(Math.round(weatherData.data[0].RealFeelTemperature.Value));
+        }
+      } catch (err) {
+        setEr(true);
+      }
+    };
+
+    getTemp();
   }, []);
 
   useEffect(() => {
@@ -52,31 +58,34 @@ const LayerBuilder = () => {
   // debugger;
   // console.log(temp);
 
-  return (
-    <Aux>
-      {/* TODO - placeholder LOADING, change to sth nicer later. */}
-      {clo !== undefined && temp !== undefined ? (
-        <div>
-          <p>
-            <strong>Current temperature: {temp} °C</strong>
-          </p>
-          <Clothes clo={clo} />
-        </div>
-      ) : (
-        <div>LOADING...</div>
-      )}
-      <AdvanceSettings
-        less={() => {
-          if (clo > 0) setClo(clo - 0.1);
-        }}
-        more={() => {
-          if (clo < 1.5) setClo(clo + 0.1);
-        }}
-        disableLess={clo <= 0}
-        disableMore={clo >= 1.5}
-      />
-    </Aux>
-  );
+  if (er) {
+    return <p>Connection failed. :(</p>;
+  } else {
+    return (
+      <Aux>
+        {clo !== undefined && temp !== undefined ? (
+          <div>
+            <p>
+              <strong>Current temperature: {temp} °C</strong>
+            </p>
+            <Clothes clo={clo} />
+          </div>
+        ) : (
+          <Spinner />
+        )}
+        <AdvanceSettings
+          less={() => {
+            if (clo > 0) setClo(clo - 0.1);
+          }}
+          more={() => {
+            if (clo < 1.5) setClo(clo + 0.1);
+          }}
+          disableLess={clo <= 0}
+          disableMore={clo >= 1.5}
+        />
+      </Aux>
+    );
+  }
 };
 
-export default LayerBuilder;
+export default WithErrorHandler(LayerBuilder, axios);
