@@ -23,7 +23,7 @@ const LayerBuilder = () => {
       try {
         const weatherData = await axios.get(
           // TODO - Remove this, only for developing, not secure!
-          `http://dataservice.accuweather.com/forecasts/v1/hourly/1hour/207931?apikey=${process.env.REACT_APP_ACCU_KEY}&details=true`
+          `https://dataservice.accuweather.com/forecasts/v1/hourly/1hour/207931?apikey=${process.env.REACT_APP_ACCU_KEY}&details=true`
           //     `http://dataservice.accuweather.com/forecasts/v1/hourly/12hour/207931?apikey=${process.env.REACT_APP_ACCU_KEY}`
         );
 
