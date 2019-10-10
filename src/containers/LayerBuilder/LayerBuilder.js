@@ -14,7 +14,7 @@ const LayerBuilder = () => {
 
   useEffect(() => {
     // Dummy data for develop
-    // setTemp(8);
+//     setTemp(8);
 
     // Dublin: 207931
     // debugger;
