@@ -180,8 +180,8 @@ const Ensemble = props => {
       <div className="Ensemble">
         {ensemble.map(path => (
           <div className={style.Container} key={path}>
-            <p>{path.slice(2, -4)}</p>
             <ReactSVG src={reqSvgs(path)} key={path} className={style.Svg} />
+            <p>{path.slice(2, -4)}</p>
           </div>
         ))}
       </div>
