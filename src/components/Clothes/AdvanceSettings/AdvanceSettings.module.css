@@ -7,4 +7,7 @@
   /* box-shadow: 0 2px 1px #b3cce6; */
   margin: auto;
   padding: 10px 0;
+  position: fixed;
+  bottom: 0px;
+  align-items: flex-end;
 }
