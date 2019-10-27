@@ -6,42 +6,51 @@ import Clothes from "../../components/Clothes/Clothes";
 import AdvanceSettings from "../../components/Clothes/AdvanceSettings/AdvanceSettings";
 import Spinner from "../../components/UI/Spinner/Spinner";
 import WithErrorHandler from "../../hoc/WithErrorHandler/WithErrorHandler";
+import { usePosition } from "../../components/Geo/UsePosition";
 
 const LayerBuilder = () => {
   const [temp, setTemp] = useState();
   const [clo, setClo] = useState();
   const [er, setEr] = useState(false);
+  const { latitude, longitude, error } = usePosition();
 
   useEffect(() => {
     // Dummy data for develop
-//     setTemp(8);
+    //     setTemp(8);
 
-    // Dublin: 207931
-    // debugger;
+    if (latitude === undefined || longitude === undefined) return;
 
     const getTemp = async () => {
       try {
-        const weatherData = await axios.get(
-          // TODO - Remove this, only for developing, not secure!
-          `https://dataservice.accuweather.com/forecasts/v1/hourly/1hour/207931?apikey=${process.env.REACT_APP_ACCU_KEY}&details=true`
-          //     `http://dataservice.accuweather.com/forecasts/v1/hourly/12hour/207931?apikey=${process.env.REACT_APP_ACCU_KEY}`
-        );
+        // const weatherData = await axios.get(
+        //   // TODO - Remove this, only for developing, not secure!
+        //   // `https://dataservice.accuweather.com/forecasts/v1/hourly/1hour/207931?apikey=${process.env.REACT_APP_ACCU_KEY}&details=true`
+        //   //     `http://dataservice.accuweather.com/forecasts/v1/hourly/12hour/207931?apikey=${process.env.REACT_APP_ACCU_KEY}`
+        //   `https://api.darksky.net/forecast/${process.env.REACT_APP_DARKSKY_KEY}/${latitude},${longitude}?units=si`
+        // );
 
+        let host;
+        if (process.env.NODE_ENV !== "production") {
+          host = "http://localhost:3001";
+        } else host = "https://simple-wear-backend.herokuapp.com";
+        // const host = "https://simple-wear-backend.herokuapp.com";
+
+        const weatherData = await axios.get(
+          `${host}/myforecast?latitude=${latitude}&longitude=${longitude}`
+        );
+        // console.log("Get weather data");
+        // debugger;
+        const temperature = weatherData.currently.apparentTemperature;
+        setTemp(temperature);
         // TODO - This is hard coded only for current temperature.
-        if (weatherData.data[0].RealFeelTemperature.Unit === "F") {
-          const temperature =
-            ((weatherData.data[0].RealFeelTemperature.Value - 32) * 5) / 9;
-          setTemp(Math.round(temperature));
-        } else {
-          setTemp(Math.round(weatherData.data[0].RealFeelTemperature.Value));
-        }
       } catch (err) {
+        console.log(err);
         setEr(true);
       }
     };
 
     getTemp();
-  }, []);
+  }, [latitude, longitude]);
 
   useEffect(() => {
     // console.log(temp);
@@ -63,6 +72,13 @@ const LayerBuilder = () => {
   } else {
     return (
       <Aux>
+        <code>
+          latitude: {latitude}
+          <br />
+          longitude: {longitude}
+          <br />
+          error: {error}
+        </code>
         {clo !== undefined && temp !== undefined ? (
           <div>
             <p>
