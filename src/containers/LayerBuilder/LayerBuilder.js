@@ -16,18 +16,11 @@ const LayerBuilder = () => {
   const [weather, setWeather] = useState();
 
   useEffect(() => {
-    // Dummy data for develop
-    //     setTemp(8);
-
     if (latitude === undefined || longitude === undefined) return;
 
     const getTemp = async () => {
       try {
-        let host;
-        if (process.env.NODE_ENV !== "production") {
-          host = "http://localhost:3001";
-        } else host = "https://simple-wear-backend.herokuapp.com";
-        // const host = "https://simple-wear-backend.herokuapp.com";
+        const host = "https://simple-wear-backend.herokuapp.com";
 
         const weatherData = await axios.get(
           `${host}/myforecast?latitude=${latitude}&longitude=${longitude}`
