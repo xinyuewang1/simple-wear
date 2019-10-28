@@ -44,7 +44,7 @@ const LayerBuilder = () => {
         // TODO - Hardcode for only 7-9, 17-19 as commute hours
         for (let i = 0; i < 24; i++) {
           const h = new Date(hourly[i].time * 1000);
-          debugger;
+          // debugger;
           if (h.getHours() === 7) {
             setWeather([
               hourly[i].icon, // 7
@@ -100,12 +100,10 @@ const LayerBuilder = () => {
 
         {clo !== undefined && temp !== undefined ? (
           <div>
-            <p>Commute weather:</p>
-            {weather.indexOf("rain") < 0 ? <p>no</p> : <p></p>}
-            <p>rain</p>
-            <p>
-              <strong>Current (feel-like) temp: {temp} °C</strong>
-            </p>
+            <span>Commute weather: </span>
+            {weather.indexOf("rain") < 0 ? <span>no </span> : <span></span>}
+            <span>rain</span>
+            <p>Current (feel-like) temp: {temp} °C</p>
             <Clothes clo={clo} />
           </div>
         ) : (
