@@ -13,6 +13,7 @@ const LayerBuilder = () => {
   const [clo, setClo] = useState();
   const [er, setEr] = useState(false);
   const { latitude, longitude, error } = usePosition();
+  const [weather, setWeather] = useState();
 
   useEffect(() => {
     // Dummy data for develop
@@ -22,13 +23,6 @@ const LayerBuilder = () => {
 
     const getTemp = async () => {
       try {
-        // const weatherData = await axios.get(
-        //   // TODO - Remove this, only for developing, not secure!
-        //   // `https://dataservice.accuweather.com/forecasts/v1/hourly/1hour/207931?apikey=${process.env.REACT_APP_ACCU_KEY}&details=true`
-        //   //     `http://dataservice.accuweather.com/forecasts/v1/hourly/12hour/207931?apikey=${process.env.REACT_APP_ACCU_KEY}`
-        //   `https://api.darksky.net/forecast/${process.env.REACT_APP_DARKSKY_KEY}/${latitude},${longitude}?units=si`
-        // );
-
         let host;
         if (process.env.NODE_ENV !== "production") {
           host = "http://localhost:3001";
@@ -38,11 +32,31 @@ const LayerBuilder = () => {
         const weatherData = await axios.get(
           `${host}/myforecast?latitude=${latitude}&longitude=${longitude}`
         );
-        // console.log("Get weather data");
+
+        // console.log(weatherData);
         // debugger;
-        const temperature = weatherData.currently.apparentTemperature;
+
+        const temperature = weatherData.data.currently.apparentTemperature;
         setTemp(temperature);
+        const hourly = weatherData.data.hourly.data;
         // TODO - This is hard coded only for current temperature.
+
+        // TODO - Hardcode for only 7-9, 17-19 as commute hours
+        for (let i = 0; i < 24; i++) {
+          const h = new Date(hourly[i].time * 1000);
+          debugger;
+          if (h.getHours() === 7) {
+            setWeather([
+              hourly[i].icon, // 7
+              hourly[i + 1].icon, // 8
+              hourly[i + 2].icon,
+              hourly[i + 10].icon, // 17
+              hourly[i + 11].icon,
+              hourly[i + 12].icon
+            ]);
+            break;
+          }
+        }
       } catch (err) {
         console.log(err);
         setEr(true);
@@ -69,20 +83,28 @@ const LayerBuilder = () => {
 
   if (er) {
     return <p>Connection failed. :(</p>;
+  } else if (error) {
+    return <p>{error}</p>;
   } else {
     return (
       <Aux>
-        <code>
-          latitude: {latitude}
-          <br />
-          longitude: {longitude}
-          <br />
-          error: {error}
-        </code>
-        {clo !== undefined && temp !== undefined ? (
+        {latitude === undefined || longitude === undefined ? (
           <div>
             <p>
-              <strong>Current temperature: {temp} °C</strong>
+              <strong>Finding Geolocation...</strong>
+            </p>
+          </div>
+        ) : (
+          <div></div>
+        )}
+
+        {clo !== undefined && temp !== undefined ? (
+          <div>
+            <p>Commute weather:</p>
+            {weather.indexOf("rain") < 0 ? <p>no</p> : <p></p>}
+            <p>rain</p>
+            <p>
+              <strong>Current (feel-like) temp: {temp} °C</strong>
             </p>
             <Clothes clo={clo} />
           </div>
