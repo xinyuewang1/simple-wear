@@ -96,7 +96,7 @@ const LayerBuilder = () => {
             <span>Commute weather: </span>
             {weather.indexOf("rain") < 0 ? <span>no </span> : <span></span>}
             <span>rain</span>
-            <p>Current (feel-like) temp: {temp} °C</p>
+            <p>Current (feel-like) temp: {Number(temp.toFixed(0))} °C</p>
             <Clothes clo={clo} />
           </div>
         ) : (
