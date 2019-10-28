@@ -24,7 +24,7 @@ const LayerBuilder = () => {
     const getTemp = async () => {
       try {
         let host;
-        if (process.env.NODE_ENV !== "production") {
+        if (process.env.NODE_ENV.trim() !== "production") {
           host = "http://localhost:3001";
         } else host = "https://simple-wear-backend.herokuapp.com";
         // const host = "https://simple-wear-backend.herokuapp.com";
@@ -82,7 +82,7 @@ const LayerBuilder = () => {
   // console.log(temp);
 
   if (er) {
-    return <p>Connection failed. :(</p>;
+    return <p>Connection failed: {er}</p>;
   } else if (error) {
     return <p>{error}</p>;
   } else {
