@@ -166,7 +166,32 @@ const Ensemble = props => {
       "shoes"
     ];
 
-    // TODO - add clo 1.6 and 1.7.
+  } else if (1.5 < clo && clo <= 1.6) {
+    // 494 1.60
+    ensemble = [
+      // "panties",
+      "tShirt",
+      "thinShirt",
+      "thinTrousers",
+      "jacket",
+      "overjacket",
+      "cap",
+      "gloves",
+      "socks",
+      "shoes"
+    ];
+  } else if (1.6 < clo && clo <= 1.7) {
+    // 491 1.63
+    ensemble = [
+      // "panties",
+      "underShirt",
+      "underpants",
+      "coveralls",
+      "insulatedTrousers",
+      "insulatedJacket",
+      "socks",
+      "shoes"
+    ];
   } else {
     ensemble = null;
     // console.log("Fall in else.");
