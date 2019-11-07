@@ -106,7 +106,7 @@ const Ensemble = props => {
       "tShirt",
       "shirt",
       "thickTrousers",
-      "woolJacket",
+      "jacket",
       "socks",
       "shoes"
     ];
@@ -119,7 +119,7 @@ const Ensemble = props => {
       "shirt",
       "thickTrousers",
       "vest",
-      "woolJacket",
+      "jacket",
       "socks",
       "shoes"
     ];
@@ -133,7 +133,7 @@ const Ensemble = props => {
       "shirt",
       "thickTrousers",
       "sweater",
-      "woolJacket",
+      "jacket",
       "socks",
       "shoes"
     ];
@@ -147,7 +147,7 @@ const Ensemble = props => {
       "shirt",
       "thinTrousers",
       "cardigan",
-      "woolJacket",
+      "jacket",
       "thickSocks",
       "shoes"
     ];
@@ -160,8 +160,8 @@ const Ensemble = props => {
       "thinShirt",
       "thinTrousers",
       "vest",
+      "jacket",
       "coat",
-      "woolJacket",
       "socks",
       "shoes"
     ];
@@ -174,7 +174,7 @@ const Ensemble = props => {
       "thinShirt",
       "thinTrousers",
       "jacket",
-      "overjacket",
+      "parkaCoat", //188
       "cap",
       "gloves",
       "socks",
