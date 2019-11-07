@@ -23,11 +23,11 @@ const LayerBuilder = () => {
 
     const getTemp = async () => {
       try {
-        let host;
-        if (process.env.NODE_ENV !== "production") {
-          host = "http://localhost:3001";
-        } else host = "https://simple-wear-backend.herokuapp.com";
-        // const host = "https://simple-wear-backend.herokuapp.com";
+        // let host;
+        // if (process.env.NODE_ENV !== "production") {
+        //   host = "http://localhost:3001";
+        // } else host = "https://simple-wear-backend.herokuapp.com";
+        const host = "https://simple-wear-backend.herokuapp.com";
 
         const weatherData = await axios.get(
           `${host}/myforecast?latitude=${latitude}&longitude=${longitude}`
@@ -114,10 +114,10 @@ const LayerBuilder = () => {
             if (clo > 0) setClo(clo - 0.1);
           }}
           more={() => {
-            if (clo < 1.5) setClo(clo + 0.1);
+            if (clo < 1.7) setClo(clo + 0.1);
           }}
           disableLess={clo <= 0}
-          disableMore={clo >= 1.5}
+          disableMore={clo >= 1.7}
         />
       </Aux>
     );

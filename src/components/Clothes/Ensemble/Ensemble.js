@@ -128,7 +128,7 @@ const Ensemble = props => {
     // 129 1.3
     ensemble = [
       // "panties",
-      "thermalUnderpants",
+      "underpants",
       "tShirt",
       "shirt",
       "thickTrousers",
@@ -142,7 +142,7 @@ const Ensemble = props => {
     // 450 1.37
     ensemble = [
       // "panties",
-      "thermalUnderpants",
+      "underpants",
       "undershirt",
       "shirt",
       "thinTrousers",
@@ -165,9 +165,9 @@ const Ensemble = props => {
       "socks",
       "shoes"
     ];
-
   } else if (1.5 < clo && clo <= 1.6) {
     // 494 1.60
+    // Notes: SVG reshape page to selection (Ctrl + Shift + R)
     ensemble = [
       // "panties",
       "tShirt",
@@ -184,7 +184,7 @@ const Ensemble = props => {
     // 491 1.63
     ensemble = [
       // "panties",
-      "underShirt",
+      "undershirt",
       "underpants",
       "coveralls",
       "insulatedTrousers",
@@ -214,7 +214,7 @@ const Ensemble = props => {
   } else {
     if (clo <= 0) {
       return <p>Maybe it's too hot to wear anything for you.</p>;
-    } else if (clo > 1.5) {
+    } else if (clo > 1.7) {
       return <p>Maybe it's too cold to go outside.</p>;
     }
   }
