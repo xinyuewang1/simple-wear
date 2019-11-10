@@ -1,6 +1,6 @@
 import React from "react";
 
-const AdvStory = () => {
+const Story = () => {
   return (
     <div>
       <p>Coming soon...(Hopefully)</p>
@@ -8,4 +8,4 @@ const AdvStory = () => {
   );
 };
 
-export default AdvStory;
+export default Story;

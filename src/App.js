@@ -4,7 +4,7 @@ import { Route } from "react-router-dom";
 
 import Layout from "./hoc/Layout/Layout";
 import LayerBuilder from "./containers/LayerBuilder/LayerBuilder";
-import AdvStory from "./components/AdvStory/AdvStory";
+import Story from "./components/Story/Story";
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
       <div>
         <Layout>
           <Route path="/" exact component={LayerBuilder} />
-          <Route path="/adv-story" component={AdvStory} />
+          <Route path="/story" component={Story} />
           {/* <LayerBuilder /> */}
         </Layout>
       </div>
