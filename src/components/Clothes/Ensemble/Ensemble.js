@@ -106,7 +106,7 @@ const Ensemble = props => {
       "tShirt",
       "shirt",
       "thickTrousers",
-      "woolJacket",
+      "jacket",
       "socks",
       "shoes"
     ];
@@ -119,7 +119,7 @@ const Ensemble = props => {
       "shirt",
       "thickTrousers",
       "vest",
-      "woolJacket",
+      "jacket",
       "socks",
       "shoes"
     ];
@@ -128,12 +128,12 @@ const Ensemble = props => {
     // 129 1.3
     ensemble = [
       // "panties",
-      "thermalUnderpants",
+      "underpants",
       "tShirt",
       "shirt",
       "thickTrousers",
       "sweater",
-      "woolJacket",
+      "jacket",
       "socks",
       "shoes"
     ];
@@ -142,12 +142,12 @@ const Ensemble = props => {
     // 450 1.37
     ensemble = [
       // "panties",
-      "thermalUnderpants",
+      "underpants",
       "undershirt",
       "shirt",
       "thinTrousers",
       "cardigan",
-      "woolJacket",
+      "jacket",
       "thickSocks",
       "shoes"
     ];
@@ -160,13 +160,38 @@ const Ensemble = props => {
       "thinShirt",
       "thinTrousers",
       "vest",
+      "jacket",
       "coat",
-      "woolJacket",
       "socks",
       "shoes"
     ];
-
-    // TODO - add clo 1.6 and 1.7.
+  } else if (1.5 < clo && clo <= 1.6) {
+    // 494 1.60
+    // Notes: SVG reshape page to selection (Ctrl + Shift + R)
+    ensemble = [
+      // "panties",
+      "tShirt",
+      "thinShirt",
+      "thinTrousers",
+      "jacket",
+      "parkaCoat", //188
+      "cap",
+      "gloves",
+      "socks",
+      "shoes"
+    ];
+  } else if (1.6 < clo && clo <= 1.7) {
+    // 491 1.63
+    ensemble = [
+      // "panties",
+      "undershirt",
+      "underpants",
+      "coveralls",
+      "insulatedTrousers",
+      "insulatedJacket",
+      "socks",
+      "shoes"
+    ];
   } else {
     ensemble = null;
     // console.log("Fall in else.");
@@ -189,7 +214,7 @@ const Ensemble = props => {
   } else {
     if (clo <= 0) {
       return <p>Maybe it's too hot to wear anything for you.</p>;
-    } else if (clo > 1.5) {
+    } else if (clo > 1.7) {
       return <p>Maybe it's too cold to go outside.</p>;
     }
   }
