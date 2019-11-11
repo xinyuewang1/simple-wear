@@ -16,9 +16,6 @@ const LayerBuilder = () => {
   const [weather, setWeather] = useState();
 
   useEffect(() => {
-    // Dummy data for develop
-    //     setTemp(8);
-
     if (latitude === undefined || longitude === undefined) return;
 
     const getTemp = async () => {
@@ -103,7 +100,7 @@ const LayerBuilder = () => {
             <span>Commute weather: </span>
             {weather.indexOf("rain") < 0 ? <span>no </span> : <span></span>}
             <span>rain</span>
-            <p>Current (feel-like) temp: {temp} °C</p>
+            <p>Current (feel-like) temp: {Number(temp.toFixed(0))} °C</p>
             <Clothes clo={clo} />
           </div>
         ) : (
