@@ -180,19 +180,21 @@ const Ensemble = props => {
       "socks",
       "shoes"
     ];
-  } else if (1.6 < clo && clo <= 1.7) {
-    // 491 1.63
-    ensemble = [
-      // "panties",
-      "undershirt",
-      "underpants",
-      "coveralls",
-      "insulatedTrousers",
-      "insulatedJacket",
-      "socks",
-      "shoes"
-    ];
-  } else {
+  } 
+  // else if (1.6 < clo && clo <= 1.7) {
+  //   // 491 1.63
+  //   ensemble = [
+  //     // "panties",
+  //     "undershirt",
+  //     "underpants",
+  //     "coveralls",
+  //     "insulatedTrousers",
+  //     "insulatedJacket",
+  //     "socks",
+  //     "shoes"
+  //   ];
+  // } 
+  else {
     ensemble = null;
     // console.log("Fall in else.");
   }

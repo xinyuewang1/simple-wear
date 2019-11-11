@@ -1,38 +1,43 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 
 import styles from "./Layout.module.css";
 
 import Aux from "../Auxiliary";
 import Toolbar from "../../components/Navigation/Toolbar/Toolbar";
 import SideDrawer from "../../components/Navigation/SideDrawer/SideDrawer";
+import SideDrawerContext from "../../context/SideDrawerContext";
 
-class Layout extends Component {
-  state = {
-    showSideDrawer: false
+const Layout = props => {
+  const [showSideDrawer, setShowSideDrawer] = useState(false);
+  // state = {
+  //   showSideDrawer: false
+  // };
+
+  const SideDrawerCloseHandler = () => {
+    setShowSideDrawer(false);
   };
 
-  SideDrawerCloseHandler = () => {
-    this.setState({ showSideDrawer: false });
+  const SideDrawerToggleHandler = () => {
+    setShowSideDrawer(!showSideDrawer);
   };
 
-  SideDrawerToggleHandler = () => {
-    this.setState(prevState => {
-      return { showSideDrawer: !this.state.showSideDrawer };
-    });
-  };
+  return (
+    <Aux>
+      <SideDrawerContext.Provider value={{ showSideDrawer: showSideDrawer }}>
+        <Toolbar DrawerToggleClicked={SideDrawerToggleHandler} />
+        <SideDrawerContext.Consumer>
+          {context => (
+            <SideDrawer
+              closed={SideDrawerCloseHandler}
+              open={context.showSideDrawer}
+            />
+          )}
+        </SideDrawerContext.Consumer>
+      </SideDrawerContext.Provider>
 
-  render() {
-    return (
-      <Aux>
-        <Toolbar DrawerToggleClicked={this.SideDrawerToggleHandler} />
-        <SideDrawer
-          closed={this.SideDrawerCloseHandler}
-          open={this.state.showSideDrawer}
-        />
-        <main className={styles.Content}>{this.props.children}</main>
-      </Aux>
-    );
-  }
-}
+      <main className={styles.Content}>{props.children}</main>
+    </Aux>
+  );
+};
 
 export default Layout;
