@@ -180,15 +180,18 @@ const Ensemble = props => {
       "socks",
       "shoes"
     ];
-  } else if (1.6 < clo && clo <= 1.7) {
-    // 491 1.63
+  } else if (1.6 < clo && clo <= 1.8) {
+    // 476 1.86
     ensemble = [
       // "panties",
-      "undershirt",
-      "underpants",
-      "coveralls",
-      "insulatedTrousers",
-      "insulatedJacket",
+      "tShirt",
+      "shirt",
+      "thickTrousers",
+      "jacket",
+      "parkaCoat",
+      "thinTrousers",
+      "cap",
+      "gloves",
       "socks",
       "shoes"
     ];
