@@ -9,9 +9,6 @@ import SideDrawerContext from "../../context/SideDrawerContext";
 
 const Layout = props => {
   const [showSideDrawer, setShowSideDrawer] = useState(false);
-  // state = {
-  //   showSideDrawer: false
-  // };
 
   const SideDrawerCloseHandler = () => {
     setShowSideDrawer(false);

@@ -7,20 +7,17 @@ import SideDrawerContext from "../../../../context/SideDrawerContext";
 
 // expect props: link, active.
 const NavigationItem = props => {
-  const [showSideDrawer, setShowSideDrawer] = useState(false);
+  const [sideDrawer, setSideDrawer] = useState(false);
 
   return (
-    <li className={Style.NavigationItem}>
-      <SideDrawerContext.Provider value={{ showSideDrawer: showSideDrawer }}>
-        <Link
-          to={props.link}
-          className={props.active ? Style.active : null}
-          onClick={() => setShowSideDrawer(false)}
-        >
+    <SideDrawerContext.Provider value={{ showSideDrawer: sideDrawer }}>
+      <li className={Style.NavigationItem} onClick={() => setSideDrawer(false)}>
+        <Link to={props.link} className={props.active ? Style.active : null}>
           {props.children}
         </Link>
-      </SideDrawerContext.Provider>
-    </li>
+        {console.log(sideDrawer)}
+      </li>
+    </SideDrawerContext.Provider>
   );
 };
 
