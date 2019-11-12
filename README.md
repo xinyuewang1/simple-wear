@@ -1,6 +1,7 @@
 # simple-wear
 
 [APP URL](https://simple-wear.herokuapp.com/)
+
 [APP Website](https://xinyuewang1.github.io/simple-wear/)
 
 The idea behind simple-wear is to provide hassle-free daily wearing guide. 
