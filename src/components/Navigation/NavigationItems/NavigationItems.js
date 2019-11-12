@@ -10,7 +10,7 @@ const NavigationItems = () => (
       Today
     </NavigationItem>
     <NavigationItem link="/">Adv. Settings</NavigationItem>
-    <NavigationItem link="/">Story</NavigationItem>
+    <NavigationItem link="/story">Story</NavigationItem>
   </ul>
 );
 
