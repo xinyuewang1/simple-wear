@@ -1,5 +1,8 @@
 # simple-wear
 
+[APP URL](https://simple-wear.herokuapp.com/)
+[APP Website](https://xinyuewang1.github.io/simple-wear/)
+
 The idea behind simple-wear is to provide hassle-free daily wearing guide. 
 
 It is the most scientific clothing ensemble recommender system exist in the market (research done at Oct, 2019).
