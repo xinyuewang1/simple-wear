@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 
 import Style from "./NavigationItem.module.css";
@@ -7,17 +7,18 @@ import SideDrawerContext from "../../../../context/SideDrawerContext";
 
 // expect props: link, active.
 const NavigationItem = props => {
-  const [sideDrawer, setSideDrawer] = useState(false);
+  const drawer = useContext(SideDrawerContext);
 
   return (
-    <SideDrawerContext.Provider value={{ showSideDrawer: sideDrawer }}>
-      <li className={Style.NavigationItem} onClick={() => setSideDrawer(false)}>
-        <Link to={props.link} className={props.active ? Style.active : null}>
-          {props.children}
-        </Link>
-        {console.log(sideDrawer)}
-      </li>
-    </SideDrawerContext.Provider>
+    <li className={Style.NavigationItem}>
+      <Link
+        to={props.link}
+        className={props.active ? Style.active : null}
+        onClick={drawer.SideDrawerCloseHandler}
+      >
+        {props.children}
+      </Link>
+    </li>
   );
 };
 

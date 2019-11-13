@@ -20,16 +20,12 @@ const Layout = props => {
 
   return (
     <Aux>
-      <SideDrawerContext.Provider value={{ showSideDrawer: showSideDrawer }}>
+      <SideDrawerContext.Provider
+        value={{ showSideDrawer, SideDrawerCloseHandler }}
+      >
         <Toolbar DrawerToggleClicked={SideDrawerToggleHandler} />
-        <SideDrawerContext.Consumer>
-          {context => (
-            <SideDrawer
-              closed={SideDrawerCloseHandler}
-              open={context.showSideDrawer}
-            />
-          )}
-        </SideDrawerContext.Consumer>
+
+        <SideDrawer closed={SideDrawerCloseHandler} open={showSideDrawer} />
       </SideDrawerContext.Provider>
 
       <main className={styles.Content}>{props.children}</main>
