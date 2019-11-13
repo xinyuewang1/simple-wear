@@ -142,7 +142,7 @@ const Ensemble = props => {
     // 450 1.37
     ensemble = [
       // "panties",
-      "underpants",
+      "underpants", // 0.1-0.15
       "undershirt",
       "shirt",
       "thinTrousers",
@@ -180,40 +180,22 @@ const Ensemble = props => {
       "socks",
       "shoes"
     ];
-<<<<<<< HEAD
   } else if (1.6 < clo && clo <= 1.8) {
     // 476 1.86
     ensemble = [
       // "panties",
       "tShirt",
+      "underpants",
       "shirt",
       "thickTrousers",
       "jacket",
       "parkaCoat",
-      "thinTrousers",
       "cap",
       "gloves",
       "socks",
       "shoes"
     ];
   } else {
-=======
-  } 
-  // else if (1.6 < clo && clo <= 1.7) {
-  //   // 491 1.63
-  //   ensemble = [
-  //     // "panties",
-  //     "undershirt",
-  //     "underpants",
-  //     "coveralls",
-  //     "insulatedTrousers",
-  //     "insulatedJacket",
-  //     "socks",
-  //     "shoes"
-  //   ];
-  // } 
-  else {
->>>>>>> feature/routing
     ensemble = null;
     // console.log("Fall in else.");
   }
