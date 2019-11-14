@@ -13,7 +13,6 @@ function App() {
         <Layout>
           <Route path="/" exact component={LayerBuilder} />
           <Route path="/story" component={Story} />
-          {/* <LayerBuilder /> */}
         </Layout>
       </div>
     </BrowserRouter>

@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 import Style from "./NavigationItem.module.css";
 
@@ -11,13 +11,14 @@ const NavigationItem = props => {
 
   return (
     <li className={Style.NavigationItem}>
-      <Link
+      <NavLink
         to={props.link}
+        exact
         className={props.active ? Style.active : null}
         onClick={drawer.SideDrawerCloseHandler}
       >
         {props.children}
-      </Link>
+      </NavLink>
     </li>
   );
 };
