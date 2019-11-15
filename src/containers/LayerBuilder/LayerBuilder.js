@@ -20,10 +20,6 @@ const LayerBuilder = () => {
 
     const getTemp = async () => {
       try {
-        // let host;
-        // if (process.env.NODE_ENV.trim() !== "production") {
-        //   host = "http://localhost:3001";
-        // } else host = "https://simple-wear-backend.herokuapp.com";
         const host = "https://simple-wear-backend.herokuapp.com";
 
         const weatherData = await axios.get(
@@ -42,6 +38,7 @@ const LayerBuilder = () => {
         for (let i = 0; i < 24; i++) {
           const h = new Date(hourly[i].time * 1000);
           // debugger;
+          // TODO - This will only work between 19-7, which mean when 17, 18, 19, will run out of index.
           if (h.getHours() === 7) {
             setWeather([
               hourly[i].icon, // 7
@@ -98,8 +95,17 @@ const LayerBuilder = () => {
         {clo !== undefined && temp !== undefined ? (
           <div>
             <span>Commute weather: </span>
-            {weather.indexOf("rain") < 0 ? <span>no </span> : <span></span>}
-            <span>rain</span>
+            {weather.indexOf("rain") < 0 ? <span>no rain</span> : <span></span>}
+            {weather.indexOf("rain") < 2 ? (
+              <span>umbrella </span>
+            ) : (
+              <span></span>
+            )}
+            {weather.indexOf("rain") > 1 ? (
+              <span>raincoat </span>
+            ) : (
+              <span></span>
+            )}
             <p>Current (feel-like) temp: {Number(temp.toFixed(0))} °C</p>
             <Clothes clo={clo} />
           </div>
