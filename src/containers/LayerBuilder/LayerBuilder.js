@@ -111,10 +111,10 @@ const LayerBuilder = () => {
             if (clo > 0) setClo(clo - 0.1);
           }}
           more={() => {
-            if (clo < 1.7) setClo(clo + 0.1);
+            if (clo < 2) setClo(clo + 0.1);
           }}
           disableLess={clo <= 0}
-          disableMore={clo >= 1.7}
+          disableMore={clo >= 2}
         />
       </Aux>
     );
