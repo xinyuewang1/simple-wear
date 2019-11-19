@@ -148,7 +148,7 @@ const Ensemble = props => {
       "thinTrousers",
       "cardigan",
       "jacket",
-      "thickSocks",
+      "socks",
       "shoes"
     ];
     // eslint-disable-next-line
@@ -180,22 +180,38 @@ const Ensemble = props => {
       "socks",
       "shoes"
     ];
-  } else if (1.6 < clo && clo <= 1.8) {
+  } else if (1.6 < clo && clo <= 2) {
     // 476 1.86
     ensemble = [
       // "panties",
       "tShirt",
       "shirt",
+      "underpants",
       "thickTrousers",
       "jacket",
       "parkaCoat",
-      "thinTrousers",
       "cap",
       "gloves",
       "socks",
       "shoes"
     ];
-  } else {
+  }
+  // else if (1.8 < clo && clo <= 2) {
+  //   // 478 2.02
+  //   ensemble = [
+  //     "tShirt",
+  //     "shirt",
+  //     "underpants",
+  //     "thickTrousers",
+  //     // "jacket",
+  //     "parkaCoat",
+  //     "socks",
+  //     "shoes",
+  //     "cap",
+  //     "gloves",
+  //   ];
+  // }
+  else {
     ensemble = null;
     // console.log("Fall in else.");
   }
