@@ -122,6 +122,8 @@ const LayerBuilder = () => {
           disableLess={clo <= 0}
           disableMore={clo >= 1.7}
         />
+        {/* TODO - move this to a proper footer */}
+        <a href="https://darksky.net/poweredby/">Powered by Dark Sky</a>
       </Aux>
     );
   }
