@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
-import { Route } from "react-router-dom";
+import { Route, Switch, Redirect } from "react-router-dom";
 
 import Layout from "./hoc/Layout/Layout";
 import LayerBuilder from "./containers/LayerBuilder/LayerBuilder";
@@ -11,8 +11,11 @@ function App() {
     <BrowserRouter>
       <div>
         <Layout>
-          <Route path="/" exact component={LayerBuilder} />
-          <Route path="/story" component={Story} />
+          <Switch>
+            <Route path="/" exact component={LayerBuilder} />
+            <Redirect from="/advSetting" to="/" />
+            <Route path="/story" component={Story} />
+          </Switch>
         </Layout>
       </div>
     </BrowserRouter>
