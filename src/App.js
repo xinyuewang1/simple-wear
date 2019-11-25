@@ -13,7 +13,6 @@ function App() {
         <Layout>
           <Switch>
             <Route path="/" exact component={LayerBuilder} />
-            {/* <Redirect from="/advSetting" to="/" /> */}
             <Route path="/story" component={Story} />
             <Route render={() => <h1>404</h1>} />
           </Switch>

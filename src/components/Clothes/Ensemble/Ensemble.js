@@ -31,9 +31,9 @@ const Ensemble = props => {
     ensemble = [
       // "panties",
       "shortSleeveShirt",
-      "shorts",
-      "socks",
-      "shoes"
+      "shorts"
+      // "socks",
+      // "shoes"
     ];
     // eslint-disable-next-line
   } else if (0.4 < clo && clo <= 0.5) {
@@ -41,9 +41,9 @@ const Ensemble = props => {
     ensemble = [
       // "panties",
       "shortSleeveShirt",
-      "thinTrousers",
-      "socks",
-      "shoes"
+      "thinTrousers"
+      // "socks",
+      // "shoes"
     ];
     // eslint-disable-next-line
   } else if (0.5 < clo && clo <= 0.6) {
@@ -51,9 +51,9 @@ const Ensemble = props => {
     ensemble = [
       // "panties",
       "shirt",
-      "thinTrousers",
-      "socks",
-      "shoes"
+      "thinTrousers"
+      // "socks",
+      // "shoes"
     ];
     // eslint-disable-next-line
   } else if (0.6 < clo && clo <= 0.7) {
@@ -61,9 +61,9 @@ const Ensemble = props => {
     ensemble = [
       // "panties",
       "thickShirt",
-      "trousers",
-      "socks",
-      "shoes"
+      "trousers"
+      // "socks",
+      // "shoes"
     ];
     // eslint-disable-next-line
   } else if (0.7 < clo && clo <= 0.8) {
@@ -71,9 +71,9 @@ const Ensemble = props => {
     ensemble = [
       // "panties",
       "sweater",
-      "thickTrousers",
-      "socks",
-      "shoes"
+      "thickTrousers"
+      // "socks",
+      // "shoes"
     ];
     // eslint-disable-next-line
   } else if (0.8 < clo && clo <= 0.9) {
@@ -82,9 +82,9 @@ const Ensemble = props => {
       // "panties",
       "tShirt",
       "thickShirt",
-      "thickTrousers",
-      "socks",
-      "shoes"
+      "thickTrousers"
+      // "socks",
+      // "shoes"
     ];
     // eslint-disable-next-line
   } else if (0.9 < clo && clo <= 1) {
@@ -94,9 +94,9 @@ const Ensemble = props => {
       "tShirt",
       "shirt",
       "thickTrousers",
-      "sweater",
-      "socks",
-      "shoes"
+      "sweater"
+      // "socks",
+      // "shoes"
     ];
     // eslint-disable-next-line
   } else if (1 < clo && clo <= 1.1) {
@@ -106,9 +106,9 @@ const Ensemble = props => {
       "tShirt",
       "shirt",
       "thickTrousers",
-      "jacket",
-      "socks",
-      "shoes"
+      "jacket"
+      // "socks",
+      // "shoes"
     ];
     // eslint-disable-next-line
   } else if (1.1 < clo && clo <= 1.2) {
@@ -119,9 +119,9 @@ const Ensemble = props => {
       "shirt",
       "thickTrousers",
       "vest",
-      "jacket",
-      "socks",
-      "shoes"
+      "jacket"
+      // "socks",
+      // "shoes"
     ];
     // eslint-disable-next-line
   } else if (1.2 < clo && clo <= 1.3) {
@@ -133,9 +133,9 @@ const Ensemble = props => {
       "shirt",
       "thickTrousers",
       "sweater",
-      "jacket",
-      "socks",
-      "shoes"
+      "jacket"
+      // "socks",
+      // "shoes"
     ];
     // eslint-disable-next-line
   } else if (1.3 < clo && clo <= 1.4) {
@@ -147,9 +147,9 @@ const Ensemble = props => {
       "shirt",
       "thinTrousers",
       "cardigan",
-      "jacket",
-      "thickSocks",
-      "shoes"
+      "jacket"
+      // "thickSocks",
+      // "shoes"
     ];
     // eslint-disable-next-line
   } else if (1.4 < clo && clo <= 1.5) {
@@ -161,9 +161,9 @@ const Ensemble = props => {
       "thinTrousers",
       "vest",
       "jacket",
-      "coat",
-      "socks",
-      "shoes"
+      "coat"
+      // "socks",
+      // "shoes"
     ];
   } else if (1.5 < clo && clo <= 1.6) {
     // 494 1.60
@@ -176,9 +176,9 @@ const Ensemble = props => {
       "jacket",
       "parkaCoat", //188
       "cap",
-      "gloves",
-      "socks",
-      "shoes"
+      "gloves"
+      // "socks",
+      // "shoes"
     ];
   } else if (1.6 < clo && clo <= 1.8) {
     // 476 1.86
@@ -191,9 +191,9 @@ const Ensemble = props => {
       "jacket",
       "parkaCoat",
       "cap",
-      "gloves",
-      "socks",
-      "shoes"
+      "gloves"
+      // "socks",
+      // "shoes"
     ];
   } else {
     ensemble = null;
