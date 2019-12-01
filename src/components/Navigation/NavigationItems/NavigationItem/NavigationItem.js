@@ -14,7 +14,7 @@ const NavigationItem = props => {
       <NavLink
         to={props.link}
         exact
-        className={props.active ? Style.active : null}
+        activeClassName={Style.active}
         onClick={drawer.SideDrawerCloseHandler}
       >
         {props.children}

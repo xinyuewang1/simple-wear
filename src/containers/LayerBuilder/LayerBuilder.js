@@ -96,7 +96,7 @@ const LayerBuilder = () => {
           <div>
             <span>Commute weather: </span>
             {weather.indexOf("rain") < 0 ? <span>no rain</span> : <span></span>}
-            {weather.indexOf("rain") < 2 ? (
+            {weather.indexOf("rain") < 2 && weather.indexOf("rain") >= 0 ? (
               <span>umbrella </span>
             ) : (
               <span></span>

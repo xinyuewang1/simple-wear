@@ -1,6 +1,5 @@
 import React from "react";
-import { BrowserRouter } from "react-router-dom";
-import { Route, Switch, Redirect } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import Layout from "./hoc/Layout/Layout";
 import LayerBuilder from "./containers/LayerBuilder/LayerBuilder";
