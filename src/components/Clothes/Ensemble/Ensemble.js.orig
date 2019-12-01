@@ -147,9 +147,15 @@ const Ensemble = props => {
       "shirt",
       "thinTrousers",
       "cardigan",
+<<<<<<< HEAD
+      "jacket",
+      "socks",
+      "shoes"
+=======
       "jacket"
       // "thickSocks",
       // "shoes"
+>>>>>>> feature/routing
     ];
     // eslint-disable-next-line
   } else if (1.4 < clo && clo <= 1.5) {

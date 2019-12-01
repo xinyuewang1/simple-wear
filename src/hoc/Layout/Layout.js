@@ -30,8 +30,6 @@ class Layout extends Component {
           open={this.state.showSideDrawer}
         />
         <main className={styles.Content}>{this.props.children}</main>
-        {/* TODO - move this to a proper footer */}
-        <a href="https://darksky.net/poweredby/">Powered by Dark Sky</a>
       </Aux>
     );
   }
