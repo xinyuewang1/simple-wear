@@ -187,7 +187,7 @@ const Ensemble = props => {
       "tShirt",
       "underpants",
       "shirt",
-      "underpants",
+      // "underpants",
       "thickTrousers",
       "jacket",
       "parkaCoat",
