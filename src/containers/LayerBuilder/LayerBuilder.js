@@ -49,6 +49,16 @@ const LayerBuilder = () => {
               hourly[i + 12].icon
             ]);
             break;
+          } else if (h.getHours() === 8) {
+            setWeather([
+              hourly[i].icon, // 8
+              hourly[i + 1].icon, // 9
+              // hourly[i + 2].icon,
+              hourly[i + 10].icon, // 18
+              hourly[i + 11].icon
+              // hourly[i + 12].icon
+            ]);
+            break;
           }
         }
       } catch (err) {
@@ -95,13 +105,21 @@ const LayerBuilder = () => {
         {clo !== undefined && temp !== undefined ? (
           <div>
             <span>Commute weather: </span>
-            {weather.indexOf("rain") < 0 ? <span>no rain</span> : <span></span>}
-            {weather.indexOf("rain") < 2 && weather.indexOf("rain") >= 0 ? (
+            {weather.indexOf("clear-day") > 0 ? (
+              <span>sunglasses</span>
+            ) : weather.indexOf("rain") < 0 ? (
+              <span>no rain</span>
+            ) : (
+              <span></span>
+            )}
+            {/* {weather.indexOf("rain") < 0 ? <span>no rain</span> : <span></span>} */}
+            {weather.indexOf("rain") < parseInt(weather.length / 2) &&
+            weather.indexOf("rain") >= 0 ? (
               <span>umbrella </span>
             ) : (
               <span></span>
             )}
-            {weather.indexOf("rain") > 1 ? (
+            {weather.indexOf("rain") >= parseInt(weather.length / 2) ? (
               <span>raincoat </span>
             ) : (
               <span></span>
