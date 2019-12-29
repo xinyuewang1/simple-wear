@@ -1,5 +1,5 @@
 const initialState = {
-  isSideDrawerOpen: false
+  
 };
 
 const reducer = (state = initialState, action) => {

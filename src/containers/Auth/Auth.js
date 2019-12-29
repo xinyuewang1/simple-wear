@@ -1,11 +1,15 @@
 import React, { useState } from "react";
+import { useDispatch } from "react-redux";
 
 import Input from "../../components/UI/Input/Input";
 import Button from "../../components/UI/Button/Button";
+import * as actions from "../../store/actions/index";
 
 import Style from "./Auth.module.css";
 
 const Auth = () => {
+  const dispath = useDispatch();
+
   const [controls, setControls] = useState({
     email: {
       elementType: "input",
@@ -99,14 +103,29 @@ const Auth = () => {
     ></Input>
   ));
 
+  const submitHandler = event => {
+    event.preventDefault();
+    // mapDispatchToProps.Authen(controls.email.value, controls.password.value);
+    dispath(actions.auth(controls.email.value, controls.password.value))
+  };
+
   return (
     <div className={Style.Auth}>
-      {form}
-      <Button btnType="Success" className={Style.Button}>
-        SUBMIT
-      </Button>
+      <form onSubmit={submitHandler}>
+        {form}
+        <Button btnType="Success" className={Style.Button}>
+          SUBMIT
+        </Button>
+      </form>
     </div>
   );
 };
 
+// const mapDispatchToProps = dispath => {
+//   return {
+//     Authen: (email, password) => dispath(Actions.auth(email, password))
+//   };
+// };
+
+// export default connect(null, mapDispatchToProps)(Auth);
 export default Auth;
