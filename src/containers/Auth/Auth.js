@@ -1,14 +1,17 @@
 import React, { useState } from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 import Input from "../../components/UI/Input/Input";
 import Button from "../../components/UI/Button/Button";
 import * as actions from "../../store/actions/index";
+import Spinner from "../../components/UI/Spinner/Spinner";
 
 import Style from "./Auth.module.css";
 
 const Auth = () => {
   const dispath = useDispatch();
+  const loading = useSelector(state => state.auth.loading);
+  const error = useSelector(state => state.auth.error);
 
   const [controls, setControls] = useState({
     email: {
@@ -34,6 +37,8 @@ const Auth = () => {
       touched: false
     }
   });
+
+  const [authMode, setAuthMode] = useState({ isSignUp: true });
 
   const checkValidity = (value, rules) => {
     let isValid = true;
@@ -90,7 +95,7 @@ const Auth = () => {
     });
   }
 
-  const form = formElementsArray.map(formElement => (
+  let form = formElementsArray.map(formElement => (
     <Input
       key={formElement.id}
       elementType={formElement.config.elementType}
@@ -103,29 +108,48 @@ const Auth = () => {
     ></Input>
   ));
 
-  const submitHandler = event => {
-    event.preventDefault();
-    // mapDispatchToProps.Authen(controls.email.value, controls.password.value);
-    dispath(actions.auth(controls.email.value, controls.password.value))
+  const switchModeHandler = () => {
+    setAuthMode({ isSignUp: !authMode.isSignUp });
   };
 
+  const submitHandler = event => {
+    event.preventDefault();
+    dispath(
+      actions.auth(
+        controls.email.value,
+        controls.password.value,
+        authMode.isSignUp
+      )
+    );
+  };
+
+  if (loading) {
+    form = <Spinner />;
+  }
+
+  let errorMessage = null;
+
+  if (error) {
+    errorMessage = <p>{error.message}</p>;
+  }
   return (
     <div className={Style.Auth}>
+      {errorMessage}
       <form onSubmit={submitHandler}>
         {form}
         <Button btnType="Success" className={Style.Button}>
           SUBMIT
+        </Button>
+        <Button
+          btnType="Danger"
+          className={Style.Button}
+          clicked={switchModeHandler}
+        >
+          SIGN {authMode.isSignUp ? "IN" : "UP"}
         </Button>
       </form>
     </div>
   );
 };
 
-// const mapDispatchToProps = dispath => {
-//   return {
-//     Authen: (email, password) => dispath(Actions.auth(email, password))
-//   };
-// };
-
-// export default connect(null, mapDispatchToProps)(Auth);
 export default Auth;
