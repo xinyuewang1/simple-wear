@@ -7,11 +7,13 @@ import * as actions from "../../store/actions/index";
 import Spinner from "../../components/UI/Spinner/Spinner";
 
 import Style from "./Auth.module.css";
+import { Redirect } from "react-router";
 
 const Auth = () => {
   const dispath = useDispatch();
   const loading = useSelector(state => state.auth.loading);
   const error = useSelector(state => state.auth.error);
+  const isAuthendicated = useSelector(state => state.auth.authed);
 
   const [controls, setControls] = useState({
     email: {
@@ -132,13 +134,20 @@ const Auth = () => {
   if (error) {
     errorMessage = <p>{error.message}</p>;
   }
+
+  let authRedirect = null;
+  if (isAuthendicated) {
+    authRedirect = <Redirect to="/" />;
+  }
+
   return (
     <div className={Style.Auth}>
+      {authRedirect}
       {errorMessage}
       <form onSubmit={submitHandler}>
         {form}
         <Button btnType="Success" className={Style.Button}>
-          SUBMIT
+          SIGN UP
         </Button>
         <Button
           btnType="Danger"

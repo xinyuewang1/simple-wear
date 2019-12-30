@@ -26,6 +26,7 @@ export const authFail = err => {
 export const logout = () => {
   return { type: Actions.LOG_OUT };
 };
+
 export const checkAuthTimeout = expirationTime => {
   return dispatch => {
     setTimeout(() => {

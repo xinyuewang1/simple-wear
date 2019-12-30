@@ -6,6 +6,7 @@ import LayerBuilder from "./containers/LayerBuilder/LayerBuilder";
 import Story from "./components/Story/Story";
 import Settings from "./components/Settings/Settings";
 import Auth from "./containers/Auth/Auth";
+import Logout from "./containers/Auth/Logout/Logout";
 
 function App() {
   return (
@@ -17,7 +18,10 @@ function App() {
             <Route path="/story" component={Story} />
             <Route path="/settings" component={Settings} />
             <Route path="/auth" component={Auth} />
-            <Route render={() => <h1>404</h1>} />
+            <Route path="/logout" component={Logout} />
+            <Route
+              render={() => <h1>404 We don't have this page yet. :(</h1>}
+            />
           </Switch>
         </Layout>
       </div>

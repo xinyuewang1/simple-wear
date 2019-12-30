@@ -3,7 +3,7 @@ import React from "react";
 import Style from "./Toolbar.module.css";
 
 import Logo from "../../Logo/Logo";
-import NavItems from "../NavigationItems/NavigationItems";
+import NavigationItems from "../NavigationItems/NavigationItems";
 import DrawerToggle from "../SideDrawer/DrawerToggle/DrawerToggle";
 
 const Toolbar = props => (
@@ -13,7 +13,7 @@ const Toolbar = props => (
       <Logo />
     </div>
     <nav className={Style.DesktopOnly}>
-      <NavItems />
+      <NavigationItems isAuth={props.isAuth} />
     </nav>
   </header>
 );
