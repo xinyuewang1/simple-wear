@@ -1,14 +1,15 @@
 import React, { useState } from "react";
+import { useSelector } from "react-redux";
 
 import styles from "./Layout.module.css";
 
 import Aux from "../Auxiliary/Auxiliary";
 import Toolbar from "../../components/Navigation/Toolbar/Toolbar";
 import SideDrawer from "../../components/Navigation/SideDrawer/SideDrawer";
-import SideDrawerContext from "../../context/SideDrawerContext";
 
 const Layout = props => {
   const [showSideDrawer, setShowSideDrawer] = useState(false);
+  const isAuthendicated = useSelector(state => state.auth.authed);
 
   const SideDrawerCloseHandler = () => {
     setShowSideDrawer(false);
@@ -20,17 +21,15 @@ const Layout = props => {
 
   return (
     <Aux>
-      <SideDrawerContext.Provider value={{ showSideDrawer: showSideDrawer }}>
-        <Toolbar DrawerToggleClicked={SideDrawerToggleHandler} />
-        <SideDrawerContext.Consumer>
-          {context => (
-            <SideDrawer
-              closed={SideDrawerCloseHandler}
-              open={context.showSideDrawer}
-            />
-          )}
-        </SideDrawerContext.Consumer>
-      </SideDrawerContext.Provider>
+      <Toolbar
+        isAuth={isAuthendicated}
+        DrawerToggleClicked={SideDrawerToggleHandler}
+      />
+      <SideDrawer
+        isAuth={isAuthendicated}
+        closed={SideDrawerCloseHandler}
+        open={showSideDrawer}
+      />
 
       <main className={styles.Content}>{props.children}</main>
     </Aux>

@@ -1,7 +1,7 @@
 import React from "react";
 
 import Logo from "../../Logo/Logo";
-import NavItems from "../NavigationItems/NavigationItems";
+import NavgationItems from "../NavigationItems/NavigationItems";
 import Backdrop from "../../UI/Backdrop/Backdrop";
 import Aux from "../../../hoc/Auxiliary/Auxiliary";
 
@@ -20,7 +20,7 @@ const SideDrawer = props => {
           <Logo />
         </div>
         <nav>
-          <NavItems></NavItems>
+          <NavgationItems isAuth={props.isAuth}></NavgationItems>
         </nav>
       </div>
     </Aux>
