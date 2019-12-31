@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { useDispatch } from "react-redux";
 
 import Layout from "./hoc/Layout/Layout";
 import LayerBuilder from "./containers/LayerBuilder/LayerBuilder";
@@ -7,8 +8,15 @@ import Story from "./components/Story/Story";
 import Settings from "./components/Settings/Settings";
 import Auth from "./containers/Auth/Auth";
 import Logout from "./containers/Auth/Logout/Logout";
+import * as actions from "./store/actions/index";
 
 function App() {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(actions.authCheckState());
+  }, [dispatch]);
+
   return (
     <BrowserRouter>
       <div>
