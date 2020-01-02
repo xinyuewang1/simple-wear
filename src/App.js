@@ -4,11 +4,15 @@ import { useDispatch, useSelector } from "react-redux";
 
 import Layout from "./hoc/Layout/Layout";
 import LayerBuilder from "./containers/LayerBuilder/LayerBuilder";
-import Story from "./components/Story/Story";
 import Settings from "./components/Settings/Settings";
 import Auth from "./containers/Auth/Auth";
 import Logout from "./containers/Auth/Logout/Logout";
 import * as actions from "./store/actions/index";
+import asyncComponent from "./hoc/asyncComponent/asyncComponent";
+
+const asyncStory = asyncComponent(() => {
+  return import("./components/Story/Story");
+});
 
 function App() {
   const dispatch = useDispatch();
@@ -21,7 +25,7 @@ function App() {
   let routes = (
     <Switch>
       <Route path="/" exact component={LayerBuilder} />
-      <Route path="/story" component={Story} />
+      <Route path="/story" component={asyncStory} />
       <Route path="/auth" component={Auth} />
       <Route
         render={() => (
@@ -39,7 +43,7 @@ function App() {
     routes = (
       <Switch>
         <Route path="/" exact component={LayerBuilder} />
-        <Route path="/story" component={Story} />
+        <Route path="/story" component={asyncStory} />
         <Route path="/settings" component={Settings} />
         <Route path="/auth" component={Auth} />
         <Route path="/logout" component={Logout} />
