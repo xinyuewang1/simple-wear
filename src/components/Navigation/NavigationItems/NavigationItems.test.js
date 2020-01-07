@@ -21,4 +21,11 @@ describe("<NavigationItems />", () => {
     wrapper.setProps({ isAuth: true });
     expect(wrapper.find(NavigationItem)).toHaveLength(4);
   });
+
+  it("shoud contains logout page if authenticated", () => {
+    wrapper.setProps({ isAuth: true });
+    expect(
+      wrapper.contains(<NavigationItem link="/logout">Log Out</NavigationItem>)
+    ).toEqual(true);
+  });
 });

@@ -8,7 +8,7 @@ import Spinner from "../../components/UI/Spinner/Spinner";
 import WithErrorHandler from "../../hoc/WithErrorHandler/WithErrorHandler";
 import { usePosition } from "../../components/Geo/UsePosition";
 
-const LayerBuilder = () => {
+export const LayerBuilder = () => {
   const [temp, setTemp] = useState();
   const [clo, setClo] = useState();
   const [er, setEr] = useState(false);
