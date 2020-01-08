@@ -11,6 +11,7 @@ import * as serviceWorker from "./serviceWorker";
 // import reducer from "./store/reducers/reducer";
 import authReducer from "./store/reducers/auth";
 import { combineReducers } from "redux";
+import { BrowserRouter } from "react-router-dom";
 
 const composeEnhancers =
   process.env.NODE_ENV === "development"
@@ -26,7 +27,9 @@ const store = createStore(
 
 ReactDOM.render(
   <Provider store={store}>
-    <App />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </Provider>,
   document.getElementById("root")
 );
