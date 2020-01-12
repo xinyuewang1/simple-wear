@@ -1,7 +1,5 @@
 # simple-wear
 
-[APP on Heroku](https://simple-wear.herokuapp.com/)
-
 [App on Firebase](https://simple-wear-8950d.firebaseapp.com/)
 
 [APP Website](https://xinyuewang1.github.io/simple-wear/)
